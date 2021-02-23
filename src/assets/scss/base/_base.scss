@@ -1,0 +1,9 @@
+html body{
+  overflow-x: hidden !important;
+  max-width: 100% !important;
+}
+.background--primary{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: $primary;
+}

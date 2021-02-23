@@ -1,0 +1,31 @@
+//@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+
+body {
+  font-family: $font-stack;
+}
+
+.font-size-larger {
+  font-size: xxx-large;
+}
+
+.text-yellow {
+  color: $yellow;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: normal;
+}
+
+.heading--title{
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.heading--subtitle{
+  font-size: 22px;
+}
+
+.font--20{
+  font-size: 20px !important;
+}

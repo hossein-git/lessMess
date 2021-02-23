@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <h1 class="text-center">
+        here will be nav
+    </h1>
+</nav>
+
+<header>
+    <div class="row background--primary px-5 h-100">
+        <div class="col-md-6">
+            <img src="../assets/img/detailsHeader.png"
+                 class="img-fluid details-heading--lg-img py-5"
+
+                 alt="">
+            <img class="img-fluid details-heading--img col-9"
+                 src="../assets/img/details-header.png"
+                 alt="less mess">
+        </div>
+        <div class="col-md-6 py-5">
+            <h6 class="text-white font--20">TOPSOIL</h6>
+            <h1 class="text-yellow text-left heading--title">
+                BUY LESS MESS <br>
+                TOPSOIL WITH QUICK <br>
+                HOME DELIVERY.
+            </h1>
+            <h6 class="text-white heading--subtitle pt-2">
+                Less Mess topsoil is a nutrient-rich blend of garden soil<br>
+                that is excellent at promoting healthy plant growth.
+            </h6>
+
+        </div>
+    </div>
+</header>
+
+<main class="pb-5">
+    <!-- Product details Section -->
+    <section class="container">
+        <div class="row product--details-container">
+            <!-- breadcrumb -->
+            <div class="col-12 float-left my-5 font-weight-lighter">
+                Home / Products / Topsoil /Top Dressing Blend
+            </div>
+
+            <!-- product image -->
+            <div class="col-md-6 pt-5 mb-5">
+
+                <div id="productCarousel" class="carousel slide" data-ride="carousel" align="center">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../assets/img/detailsHeader.png" class="img-fluid">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/img/Premium Garden Blend -1@2x.png" class="img-fluid">
+                        </div>
+                    </div>
+
+                    <ol class="carousel-indicators list-inline mt-4">
+                        <li class="list-inline-item active">
+                            <a id="carousel-selector-0" class="selected" data-slide-to="0" data-target="#productCarousel">
+                                <img src="../assets/img/detailsHeader.png" class="img-thumbnail">
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a id="carousel-selector-1" data-slide-to="1" data-target="#productCarousel">
+                                <img src="../assets/img/Premium Garden Blend -1@2x.png" class="img-thumbnail">
+                            </a>
+                        </li>
+                    </ol>
+                </div>
+
+            </div>
+            <div class="col-md-6 pl-4 pl-md-0 py-5 border-bottom-bold">
+                <h1 class="text-primary text-left">TOP DRESSING BLEND</h1>
+                <p class="mt-5">
+                    Our Top Dressing Blend sack of soil is specifically designed for enhancing the overall
+                    appearance of your lawn. This mixture is comprised of peat loam, compost, topsoil
+                    and sand. It will help restore the look of your lawn and make your grass healthier
+                    and thicker than ever before. It is screened using the latest in screening
+                    technologies to ensure the blend will rake easily into your lawn. (See FAQ for more
+                    details on Top Dressing).
+                </p>
+                <h6 class="mt-5 mb-0 text-primary">TOP USES</h6>
+                <p class="h-25">
+                    This blend restores optimum health to your lawn by adding nutrients to help your
+                    lawn grow thicker. It is great for growing new lawns from sod or seed.
+                </p>
+                <h4 class="mt-4 product--price mb-5 mb-md-2">
+                    Price $149 .95
+                </h4>
+
+            </div>
+            <div class="offset-md-6 col-md-6 border-bottom-bold py-5 px-2">
+                <i class="fa fa-calculator text-primary float-left mr-4"></i>
+                <div class="ml-2 my-auto">
+                    <h2 class="text-primary text-left mb-1">
+                        HOW MUCH <br>
+                        DO I NEED?
+                    </h2>
+                    <span>
+                        Use our ha ndy calculator to <br>
+                        figure out the right amount.
+                    </span>
+                </div>
+
+            </div>
+            <div class="offset-md-6 col-md-6 mt-5 pl-4 pl-md-0">
+                <span class="float-left mr-5 mt-3">
+                    Quantity
+                </span>
+
+                <!-- This custom JQuery plugin can have step , min value, max value and default value -->
+                <div class="quantity">
+                    <input data-min-value="1" type="button" value="-"
+                           class="minus">
+                    <input type="number" data-step="1"
+                           min="1" max="1000"
+                           name="quantity"
+                           value="1"
+                           title="Quantity" class="qty" size="4">
+                    <input data-max-value="1000" type="button" value="+" class="plus">
+                </div>
+            </div>
+            <div class="offset-md-6 col-md-6 mt-5 pl-4 pl-md-0">
+                <button class="btn btn-primary btn-lg buy-btn float-left col-8" name="">
+                    ADD TO CART
+                </button>
+
+                <p class="float-right text-primary ml-3">
+                    <a href="#">
+                        <i class="fa fa-share-alt ml-2"></i>
+                        <small class="d-block">SHARE</small>
+                    </a>
+                </p>
+                <p class="float-right text-primary">
+                    <a href="#">
+                        <i class="fa fa-print ml-1"></i>
+                        <small class="d-block">PRINT</small>
+                    </a>
+                </p>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- BENEFITS section -->
+    <section class="benefit--section">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-12 mb-5">
+                    <h1 class="text-primary text-left">
+                        BENEFITS OF USING <br>
+                        LESS MESS TOPSOIL.
+                    </h1>
+                </div>
+
+                <div class="col-md-4">
+                    <img src="../assets/img/Group 565@2x.png" class=" mb-4" width="110" height="116" alt="">
+                    <h5 class="text-primary">
+                        BRINGS LIFE back to an <br>
+                        old flowerbed.
+                    </h5>
+                    <p>
+                        Spread at least one inch of <br>
+                        topsoil on nutrient deficient soil <br>
+                        and mix thoroughly.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <img src="../assets/img/Group 573@2x.png" class=" mb-4" width="100" height="99" alt="">
+                    <h5 class="text-primary">
+                        SEED A NE w lawn or seed <br>
+                        over dead grass.
+                    </h5>
+                    <p>
+                        Spread topsoil 3" to 4" inches, <br>
+                        seed, then moisten surface. In <br>
+                        order for grass to germinate, <br>
+                        ensure you take the seeds into <br>
+                        your lawn. Water frequently.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <img src="../assets/img/Group 567@2x.png" class=" mb-4" width="98" height="99" alt="">
+                    <h5 class="text-primary">
+                        GROW HEAL their plants <br>
+                        and vegetables.
+                    </h5>
+                    <p>
+                        Spread 3 – 4 inches of topsoil <br>
+                        over fruit, vegetable and herb <br>
+                        gardens to ensure bigger, <br>
+                        healthier plants and larger <br>
+                        fruits and vegetables.
+                    </p>
+
+                </div>
+                <div class="col-md-4 mt-3">
+                    <img src="../assets/img/sowing@2x.png" class=" mb-4" width="91" height="91" alt="">
+                    <h5 class="text-primary">
+                        BUILD NAT ural grading.
+                    </h5>
+                    <p>
+                        Fill in low or bare areas of your <br>
+                        lawn with topsoil to encourage <br>
+                        growth and prevent pooling of <br>
+                        water.
+                    </p>
+                </div>
+                <div class="col-md-4 mt-3">
+                    <img src="../assets/img/height.png" class=" mb-4" width="84" height="85" alt="">
+                    <h5 class="text-primary">
+                        SPRING REnewal.
+                    </h5>
+                    <p>
+                        Mix dehydrated manure and <br>
+                        topsoil together for healthier, <br>
+                        hardier spring annuals.
+
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- RELATED PRODUCTS -->
+    <section class="relative--products mt-5 py-5 px-2 px-md-0">
+        <div class="container">
+            <div class="row">
+                <!-- title  -->
+                <div class="col-12 pl-0 mb-5 relative--products-title">
+                    <h1 class="text-primary text-left">
+                        RELATED PRODUCTS
+                    </h1>
+                </div>
+
+                <!-- product Box -->
+                <div class="col-md-4 col-lg-3 px-0 px-md-2 px-lg-3 text-center text-md-left card--listing">
+                    <div class="card--listing-body">
+                        <img class="img-fluid card--listing-img" src="../assets/img/3785-Bag-Soil - 4000.png" alt="">
+                        <h4 class="card-title mt-2">
+                            Premium Garden Blend
+                        </h4>
+                        <p class="product--card-description">
+                            An all-pur pose growing soil that
+                            can be used for most
+                            applications. Ideal for creating
+                            new gardens, reviving and
+                            replenishing existing gardens or
+                            planting trees and shrubs.
+                        </p>
+                    </div>
+                    <div class="product--card-footer">
+                        <span class="product--card-price font-weight-bold">
+                            From $149. 95
+                        </span>
+                        <div class="product--card-action text-center">
+                            <button class="btn btn-primary btn-lg btn-block mt-2" name="">
+                                ADD TO CART
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- /product Box -->
+
+                <div class="col-md-4 col-lg-3 px-0 px-md-2 px-lg-3 text-center text-md-left card--listing">
+                    <div class="card--listing-body">
+                        <img class="img-fluid card--listing-img" src="../assets/img/3785-Bag-Soil - 4000.png" alt="">
+                        <h4 class="card-title mt-2">
+                            Ultra Bloo ming Blend
+                        </h4>
+                        <p class="product--card-description">
+                            This blend is ideal for starting a
+                            vegetable garden or planting
+                            trees and shrubs.
+                        </p>
+                    </div>
+                    <div class="product--card-footer">
+                        <span class="product--card-price font-weight-bold">
+                           $289.95
+                        </span>
+                        <div class="product--card-action">
+                            <button class="btn btn-primary btn-lg btn-block mt-2" name="">
+                                ADD TO CART
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4 col-lg-3 px-0 px-md-2 px-lg-3 text-center text-md-left card--listing">
+                    <div class="card--listing-body">
+                        <img class="img-fluid card--listing-img" src="../assets/img/meltco-min-1@2x.png" alt="">
+                        <h4 class="card-title mt-2">
+                            w/ Meltco De-Icer
+                        </h4>
+                        <p class="product--card-description">
+                            Our Premiu m Fall Soil Enhancer
+                            with mushroom compost is a
+                            great way to enrich your garden
+                            soil in the fall with a natural
+                            organic amendment.
+                        </p>
+                    </div>
+                    <div class="product--card-footer">
+                        <span class="product--card-price font-weight-bold">
+                             $159.95
+                        </span>
+                        <div class="product--card-action">
+                            <button class="btn btn-primary btn-lg btn-block mt-2" name="">
+                                ADD TO CART
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- OFTEN ORDERED -->
+    <section class="relative--products mt-5 pt-5 px-2 px-md-0">
+        <div class="container">
+            <div class="row">
+                <!-- title  -->
+                <div class="col-12 pl-0 relative--products-title">
+                    <h1 class="text-primary text-left">
+                        OFTEN ORDERED TOGETHER
+                    </h1>
+                </div>
+
+                <!-- product OFTEN ORDERED  Box -->
+                <div class="col-md-4 col-lg-3 mt-5 px-0 px-md-2 px-lg-3 text-center text-md-left card--listing">
+                    <div class="card--listing-body">
+                        <img class="mx-auto d-block mb-5" src="../assets/img/emty.png" alt="">
+                        <h5 class="card-title mt-2">
+                            Fertilizer
+                        </h5>
+                        <p class="product--card-description">
+                            Lorem ipsu m dolor sit amet,
+                            consectetur adipiscing elit. Ut at
+                            bibendum dolor, ut rhoncus mi.
+                        </p>
+                    </div>
+                    <div class="product--card-footer">
+                        <span class="product--card-price font-weight-bold">
+                            $XXX.XX
+                        </span>
+                        <div class="product--card-action text-center">
+                            <button class="btn btn-primary btn-lg btn-block mt-2" name="">
+                                ADD TO CART
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- /product OFTEN ORDERED  Box -->
+
+                <div class="col-md-4 col-lg-3 mt-5 px-0 px-md-2 px-lg-3 text-center text-md-left card--listing">
+                    <div class="card--listing-body">
+                        <img class="mx-auto d-block mb-5" src="../assets/img/emty.png" alt="">
+                        <h5 class="card-title mt-2">
+                            Grass Seed
+                        </h5>
+                        <p class="product--card-description">
+                            Lorem ipsu m dolor sit amet,
+                            consectetur adipiscing elit. Ut at
+                            bibendum dolor, ut rhoncus mi.
+                        </p>
+                    </div>
+                    <div class="product--card-footer">
+                        <span class="product--card-price font-weight-bold">
+                           $XXX.XX
+                        </span>
+                        <div class="product--card-action">
+                            <button class="btn btn-primary btn-lg btn-block mt-2" name="">
+                                ADD TO CART
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4 col-lg-3 mt-5 px-0 px-md-2 px-lg-3 text-center text-md-left card--listing">
+                    <div class="card--listing-body">
+                        <img class="mx-auto d-block mb-5" src="../assets/img/emty.png" alt="">
+                        <h5 class="card-title mt-2">
+                            Sod
+                        </h5>
+                        <p class="product--card-description">
+                            Lorem ipsu m dolor sit amet,
+                            consectetur adipiscing elit. Ut at
+                            bibendum dolor, ut rhoncus mi.
+                        </p>
+                    </div>
+                    <div class="product--card-footer">
+                        <span class="product--card-price font-weight-bold">
+                            $XXX.XX
+                        </span>
+                        <div class="product--card-action">
+                            <button class="btn btn-primary btn-lg btn-block mt-2" name="">
+                                ADD TO CART
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-4 col-lg-3 mt-5 px-0 px-md-2 px-lg-3 text-center text-md-left card--listing">
+                    <div class="card--listing-body">
+                        <img class="mx-auto d-block mb-5" src="../assets/img/emty.png" alt="">
+                        <h5 class="card-title mt-2">
+                            Other
+                        </h5>
+                        <p class="product--card-description">
+                            Lorem ipsu m dolor sit amet,
+                            consectetur adipiscing elit. Ut at
+                            bibendum dolor, ut rhoncus mi.
+                        </p>
+                    </div>
+                    <div class="product--card-footer">
+                        <span class="product--card-price font-weight-bold">
+                            $XXX.XX
+                        </span>
+                        <div class="product--card-action">
+                            <button class="btn btn-primary btn-lg btn-block mt-2" name="">
+                                ADD TO CART
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+</main>
+
+<footer></footer>
+
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+.faq--header {
+  background-image: url(../img/faq.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.faq--group-btn {
+  a {
+    width: 230px;
+    border: 3.5px solid;
+    font-weight: normal;
+  }
+}
+
+.card-header.collapsed {
+  background: #f7f7f7;
+}
+
+.card-header:not(.collapsed) {
+  background: $primary;
+
+  button {
+    color: white !important;
+  }
+}
+
+.faq--calculate-tab-content{
+  input[text]{
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+  .border-bottom{
+    border-bottom: 3px solid !important;
+  }
+}
+
+.faq--calculate-content-footer{
+  margin-top: 12%;
+  img{
+    min-height: 200px;
+    min-width: 200px;
+  }
+}
