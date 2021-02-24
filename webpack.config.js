@@ -94,26 +94,17 @@ module.exports = {
       template: "src/index.html",
       inject: true,
       minify: {
-        removeComments: true,
-        collapseWhitespace: true
+        removeComments: false,
+        collapseWhitespace: false
       }
     }),
     new HtmlWebpackPlugin({
-      title: "FAQ",
-      template: "src/pages/faq.html",
+      title: "Home Page",
+      template: "src/pages/home.html",
       inject: true,
       minify: {
-        removeComments: true,
-        collapseWhitespace: true
-      }
-    }),
-    new HtmlWebpackPlugin({
-      title: "Product Details",
-      template: "src/pages/details.html",
-      inject: true,
-      minify: {
-        removeComments: true,
-        collapseWhitespace: true
+        removeComments: false,
+        collapseWhitespace: false
       }
     }),
     new BrowserSyncPlugin({
@@ -123,7 +114,7 @@ module.exports = {
     })
   ],
   performance: {
-    maxEntrypointSize: 1000000,
-    maxAssetSize: 1000000
+    maxEntrypointSize: 10000000,
+    maxAssetSize: 10000000
   }
 };

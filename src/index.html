@@ -5,776 +5,404 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>FAQ</title>
+    <title>HOME</title>
 </head>
 
 <body>
 
-<!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark">
-    <h1 class="text-center">
-        here will be nav
-    </h1>
-</nav>
 
-<header>
-    <div class="row faq--header py-5 px-5  h-100">
-        <div class="col-0 col-md-6"></div>
-        <div class="col-12 col-md-6">
-            <h6 class="text-white">RESOURCES</h6>
-            <h1 class="text-yellow text-left">
-                STILL HAVE <br>
-                QUESTIONS ABOUT <br>
-                OUR PRODUCTS?
-            </h1>
-            <h6 class="text-white">
-                One of our experts
-                will be happy to assist you. <br>
-                Call us today at 416.789.4749
-            </h6>
+<!-- START HEADER -->
+<header class="header_wrap">
+    <div class="top-header d-none d-md-block">
+        <div class="container header--container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-5">
+                    <div class="header_topbar_info">
+                        <div class="pb-2 text-white">
+                            <i class="fa fa-map-marker-alt font--18"></i>
+                            <span class="pb-2">
+                                Your Location is: L7N 1S4 IRAN
+                                <a href="#" class="text-white">
+                                    (change location )
+                                </a>
+                            </span>
+                        </div>
+                    </div>
 
+                </div>
+                <!-- language desktop -->
+                <div class="col-md-1 px-0 d-md-none d-lg-block">
+                    <div class="text-white">
+                        <a href="#" class="text-white">ENG</a> | <a href="#" class="text-white">FRE</a>
+                    </div>
+                </div>
+                <div class="col-md-5 pr-0">
+                    <div class="d-flex align-items-center justify-content-center justify-content-md-end">
+                        <div class="text-white mr-md-2 mr-lg-4">
+                            <i class="fa fa-phone-alt"></i>
+                            Toll Free: <a class="text-white" href="tell:1 .800.XXX.XXXX">1 .800.XXX.XXXX</a> or
+                            <a class="text-white" href="tell:416.789.4749">416.789.4749</a>
+                        </div>
+
+                        <!-- User and cart  -->
+                        <ul class="navbar-nav attr-nav align-items-center">
+                            <li class="dropdown cart_dropdown">
+                                <a class="nav-link cart_trigger" href="#"
+                                   data-toggle="dropdown">
+                                    <i class="fa fa-user-circle text-white font--20"></i>
+                                </a>
+                                <div class="cart_box dropdown-menu dropdown-menu-bottom">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                            <a href="">
+                                                Sign In
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="">
+                                                Create an acount
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="">
+                                                Track My Order
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a href="#" class="nav-link">
+                                    <i class="fa fa-shopping-cart text-white font--20"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="middle-header pb-0">
+        <div class="container">
+            <div class="nav_block">
+                <!-- LOGO -->
+                <a class="navbar-brand" href="/">
+                    <img class="img-fluid header--logo" src="../assets/img/less_mess_logo@2x.png" alt="logo"/>
+                </a>
+
+                <!-- Main NAV -->
+                <nav class="navbar navbar-expand-lg">
+                    <button class="navbar-toggler side_navbar_toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSidetoggle" aria-expanded="false">
+                        <span class="fa fa-bars"></span>
+                    </button>
+                    <!-- search tablet -->
+                    <div class="product_search_form d-md-block d-lg-none float-right mr-5">
+                        <form>
+                            <div class="input-group">
+                                <input class="form-control" placeholder="" required="" type="text">
+                                <button type="submit" class="search_btn">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="collapse navbar-collapse mobile_side_menu" id="navbarSidetoggle">
+                        <ul class="navbar-nav header--nav-ul">
+                            <li class="dropdown">
+                                <a data-toggle="dropdown" class="nav-link dropdown-toggle " href="#">Products</a>
+                                <div class="dropdown-menu">
+                                    <ul>
+                                        <li><a class="dropdown-item nav-link nav_item" href="#">SubCat 1</a></li>
+                                        <li><a class="dropdown-item nav-link nav_item" href="#">SubCat 2</a></li>
+                                        <li><a class="dropdown-item nav-link nav_item" href="#">SubCat 3</a></li>
+                                        <li><a class="dropdown-item nav-link nav_item" href="#">SubCat 4</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="dropdown">
+                                <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Resources</a>
+                                <div class="dropdown-menu">
+                                    <ul>
+                                        <li>
+                                            <a class="dropdown-item menu-link dropdown-toggler" href="#">Grids</a>
+                                            <div class="dropdown-menu">
+                                                <ul>
+                                                    <li><a class="dropdown-item nav-link nav_item"
+                                                           href="blog-three-columns.html">3 columns</a></li>
+                                                    <li><a class="dropdown-item nav-link nav_item"
+                                                           href="blog-four-columns.html">4 columns</a></li>
+                                                    <li><a class="dropdown-item nav-link nav_item"
+                                                           href="blog-left-sidebar.html">Left Sidebar</a></li>
+                                                    <li><a class="dropdown-item nav-link nav_item"
+                                                           href="blog-right-sidebar.html">right Sidebar</a></li>
+                                                    <li><a class="dropdown-item nav-link nav_item"
+                                                           href="blog-standard-left-sidebar.html">Standard Left
+                                                        Sidebar</a></li>
+                                                    <li><a class="dropdown-item nav-link nav_item"
+                                                           href="blog-standard-right-sidebar.html">Standard right
+                                                        Sidebar</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item menu-link dropdown-toggler" href="#">Masonry</a>
+                                            <div class="dropdown-menu">
+                                                <ul>
+                                                    <li><a class="dropdown-item nav-link nav_item"
+                                                           href="blog-masonry-three-columns.html">3 columns</a></li>
+                                                    <li><a class="dropdown-item nav-link nav_item"
+                                                           href="blog-masonry-four-columns.html">4 columns</a></li>
+                                                    <li><a class="dropdown-item nav-link nav_item"
+                                                           href="blog-masonry-left-sidebar.html">Left Sidebar</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item nav-link nav_item"
+                                                           href="blog-masonry-right-sidebar.html">right Sidebar</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item menu-link dropdown-toggler" href="#">Single
+                                                Post</a>
+                                            <div class="dropdown-menu">
+                                                <ul>
+                                                    <li><a class="dropdown-item nav-link nav_item"
+                                                           href="blog-single.html">Default</a></li>
+                                                    <li><a class="dropdown-item nav-link nav_item"
+                                                           href="blog-single-left-sidebar.html">left sidebar</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item nav-link nav_item"
+                                                           href="blog-single-slider.html">slider post</a></li>
+                                                    <li><a class="dropdown-item nav-link nav_item"
+                                                           href="blog-single-video.html">video post</a></li>
+                                                    <li><a class="dropdown-item nav-link nav_item"
+                                                           href="blog-single-audio.html">audio post</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item menu-link dropdown-toggler" href="#">List</a>
+                                            <div class="dropdown-menu">
+                                                <ul>
+                                                    <li><a class="dropdown-item nav-link nav_item"
+                                                           href="blog-list-left-sidebar.html">left sidebar</a></li>
+                                                    <li><a class="dropdown-item nav-link nav_item"
+                                                           href="blog-list-right-sidebar.html">right sidebar</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="dropdown">
+                                <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">News & Blog</a>
+                                <div class="dropdown-menu">
+                                    <ul>
+                                        <li>
+                                            <a class="dropdown-item menu-link dropdown-toggler" data-toggle="dropdown" href="#">Grids</a>
+                                            <div class="dropdown-menu">
+                                                <ul>
+                                                    <li><a class="dropdown-item nav-link nav_item"
+                                                           href="blog-three-columns.html">3 columns</a></li>
+                                                    <li><a class="dropdown-item nav-link nav_item"
+                                                           href="blog-four-columns.html">4 columns</a></li>
+                                                    <li><a class="dropdown-item nav-link nav_item"
+                                                           href="blog-left-sidebar.html">Left Sidebar</a></li>
+                                                    <li><a class="dropdown-item nav-link nav_item"
+                                                           href="blog-right-sidebar.html">right Sidebar</a></li>
+                                                    <li><a class="dropdown-item nav-link nav_item"
+                                                           href="blog-standard-left-sidebar.html">Standard Left
+                                                        Sidebar</a></li>
+                                                    <li><a class="dropdown-item nav-link nav_item"
+                                                           href="blog-standard-right-sidebar.html">Standard right
+                                                        Sidebar</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item menu-link dropdown-toggler" href="#">Masonry</a>
+                                            <div class="dropdown-menu">
+                                                <ul>
+                                                    <li><a class="dropdown-item nav-link nav_item"
+                                                           href="blog-masonry-three-columns.html">3 columns</a></li>
+                                                    <li><a class="dropdown-item nav-link nav_item"
+                                                           href="blog-masonry-four-columns.html">4 columns</a></li>
+                                                    <li><a class="dropdown-item nav-link nav_item"
+                                                           href="blog-masonry-left-sidebar.html">Left Sidebar</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item nav-link nav_item"
+                                                           href="blog-masonry-right-sidebar.html">right Sidebar</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item menu-link dropdown-toggler" href="#">Single
+                                                Post</a>
+                                            <div class="dropdown-menu">
+                                                <ul>
+                                                    <li><a class="dropdown-item nav-link nav_item"
+                                                           href="blog-single.html">Default</a></li>
+                                                    <li><a class="dropdown-item nav-link nav_item"
+                                                           href="blog-single-left-sidebar.html">left sidebar</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item nav-link nav_item"
+                                                           href="blog-single-slider.html">slider post</a></li>
+                                                    <li><a class="dropdown-item nav-link nav_item"
+                                                           href="blog-single-video.html">video post</a></li>
+                                                    <li><a class="dropdown-item nav-link nav_item"
+                                                           href="blog-single-audio.html">audio post</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item menu-link dropdown-toggler" href="#">List</a>
+                                            <div class="dropdown-menu">
+                                                <ul>
+                                                    <li><a class="dropdown-item nav-link nav_item"
+                                                           href="blog-list-left-sidebar.html">left sidebar</a></li>
+                                                    <li><a class="dropdown-item nav-link nav_item"
+                                                           href="blog-list-right-sidebar.html">right sidebar</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="dropdown">
+                                <a class="nav-link nav_item" href="/about.html" data-toggle="dropdown">About</a>
+                            </li>
+
+                            <li>
+                                <a class="nav-link nav_item" href="/contact.html">Contact</a>
+                            </li>
+                            <!-- change language in tablet and mobile -->
+                            <li class="border-top mt-1 d-md-block d-lg-none">
+                                <div class="text-center pt-2">
+                                    <a href="#" class="text-white">ENG</a> |
+                                    <a href="#" class="text-white">FRE</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <!-- search form desktop -->
+                <div class="product_search_form">
+                    <form>
+                        <div class="input-group">
+                            <input class="form-control" placeholder="" required="" type="text">
+                            <button type="submit" class="search_btn">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+
+            </div>
+            <div class="bottom--header d-md-none">
+                <div class="row">
+                    <div class="col-4">
+                        <ul class="navbar-nav attr-nav align-items-center">
+                            <li class="dropdown cart_dropdown">
+                                <a class="nav-link cart_trigger" href="#"
+                                   data-toggle="dropdown">
+                                    <i class="fa fa-user-circle text-dark font--20"></i>
+                                </a>
+                                <div class="cart_box dropdown-menu dropdown-menu-bottom">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                            <a href="">
+                                                Sign In
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="">
+                                                Create an acount
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="">
+                                                Track My Order
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a href="#" class="nav-link">
+                                    <i class="fa fa-shopping-cart text-dark font--20"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <!-- search mobile -->
+                        <div class="product_search_form d-block pt-3 float-right">
+                            <form>
+                                <div class="input-group">
+                                    <input class="form-control" placeholder="" required="" type="text">
+                                    <button type="submit" class="search_btn">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </header>
+<!-- END HEADER -->
 
-<main class="pb-5 px-2 px-md-0">
-    <div class="container ">
-        <div class="row">
-            <!-- breadcrumb -->
-            <div class="col-12 float-left my-5 font-weight-lighter">
-                Home / Resources / FAQs
+<main class="pb-5">
+    <div class="shop_banner_slider staggered-animation-wrap">
+        <div id="carouselExampleControls" class="carousel slide carousel-fade light_arrow" data-ride="carousel">
+            <div class="carousel-inner">
+                <!-- slider Item -->
+                <div class="carousel-item background_bg active" data-img-src="../assets/img/slider1.png">
+                    <div class="banner_slide_content banner_content_inner">
+                        <div class="">
+                            <div class="row">
+                                <div class="offset-lg-1 col-lg-10 col-12 pl-lg-0">
+                                    <div class="overflow-hidden">
+                                        <h2 class="staggered-animation text-white h1" data-animation="slideInLeft"
+                                            data-animation-delay="0.5s">
+                                            GARDEN WITH <BR>
+                                            LESS MESS
+                                        </h2>
+                                        <h5 class="mb-3 mb-sm-4 staggered-animation font-weight-light text-white"
+                                            data-animation="slideInLeft" data-animation-delay="1s">
+                                            Get up to <span class="text_default">50%</span> off Today Only!
+                                        </h5>
+                                        <a class="btn btn-warning staggered-animation text-uppercase"
+                                           href="shop-left-sidebar.html" data-animation="slideInLeft"
+                                           data-animation-delay="1.5s">ORDER NOW
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-
-            <!-- tebs -->
-            <div class="col-12 nav nav-pills  faq--group-btn" id="pills-tab" role="tablist">
-                <a class="btn btn-outline-primary active mr-1" id="pills-calculator-tab" data-toggle="pill"
-                   href="#pills-calculator" role="tab" aria-controls="pills-calculator" aria-selected="true">
-                    CALCULATOR
-                </a>
-
-                <a class="btn btn-outline-primary mt-2 mt-md-0 mr-1" id="pills-tech-tab" data-toggle="pill"
-                   href="#pills-tech" role="tab" aria-controls="pills-tech" aria-selected="false">
-                    TECHNICAL DOCUMENTS
-                </a>
-
-                <a class="btn btn-outline-primary mt-2 mt-md-0 mr-1" id="pills-faq-tab" data-toggle="pill"
-                   href="#pills-faq" role="tab" aria-controls="pills-faq" aria-selected="false">
-                    FAQS/SUPPORT
-                </a>
-
-                <a class="btn btn-outline-primary mt-2 mt-md-0" id="pills-terms-tab" data-toggle="pill"
-                   href="#pills-terms" role="tab" aria-controls="pills-terms" aria-selected="false">
-                    GLOSSARY OF TERMS
-                </a>
-
-            </div>
-
-            <!-- tab contents -->
-            <div class="tab-content col-12" id="pills-tabContent">
-                <!-- Calculator TAB content -->
-                <div class="tab-pane fade show active faq--calculate-tab-content" id="pills-calculator" role="tabpanel"
-                     aria-labelledby="pills-calculator-tab">
-                    <div class="mt-5 mb-3">
-                        <h2 class="h1 pt-4 text-primary font-weight-light">
-                            Soil Calculator
-                        </h2>
-                    </div>
-                    <p>
-                        Use this calculator to estimate how much soil you will need for your garden <br>
-                        or landscape. Enter the Length, Width & Depth of your garden, lawn or flowerbed. <br>
-                        Select the Unit of Measurement for your entered numbers and Press Calculate!
-                    </p>
-
-                    <div class="row mt-5 py-4">
-
-
-                        <div class="col-md-4 form-group">
-                            <input type="text" placeholder="Length" class="form-control">
-                        </div>
-                        <div class="col-md-6 form-group pt-1">
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="customRadioInline1" name="customRadioInline1"
-                                       class="custom-control-input">
-                                <label class="custom-control-label" for="customRadioInline1">Feet</label>
-                            </div>
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="customRadioInline2" name="customRadioInline1"
-                                       class="custom-control-input">
-                                <label class="custom-control-label" for="customRadioInline2">Inches</label>
-                            </div>
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="customRadioInline3" name="customRadioInline1"
-                                       class="custom-control-input">
-                                <label class="custom-control-label" for="customRadioInline3">Meters</label>
-                            </div>
-
-                        </div>
-
-                        <div class="col-md-4 mb-3 mt-1 form-group">
-                            <input type="text" placeholder="Width" class="form-control">
-                        </div>
-                        <div class="col-md-6 mb-3 mt-1 form-group pt-1">
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="customRadioInline10" name="customRadioInline2"
-                                       class="custom-control-input">
-                                <label class="custom-control-label" for="customRadioInline10">Feet</label>
-                            </div>
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="customRadioInline20" name="customRadioInline2"
-                                       class="custom-control-input">
-                                <label class="custom-control-label" for="customRadioInline20">Inches</label>
-                            </div>
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="customRadioInline30" name="customRadioInline2"
-                                       class="custom-control-input">
-                                <label class="custom-control-label" for="customRadioInline30">Meters</label>
-                            </div>
-
-                        </div>
-
-                        <div class="col-md-4 form-group">
-                            <input type="text" placeholder="Depth" class="form-control">
-                        </div>
-                        <div class="col-md-6 form-group pt-1">
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="radio3" name="radio3" class="custom-control-input">
-                                <label class="custom-control-label" for="radio3">Feet</label>
-                            </div>
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="radio32" name="radio3" class="custom-control-input">
-                                <label class="custom-control-label" for="radio32">Inches</label>
-                            </div>
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="radio33" name="radio3" class="custom-control-input">
-                                <label class="custom-control-label" for="radio33">Meters</label>
-                            </div>
-
-                        </div>
-
-                        <div class="col-md-4 form-group">
-                            <button class="btn btn-primary btn-lg btn-block mt-4" name="calculate" id="">
-                                CALCULATE
-                            </button>
-                        </div>
-                    </div>
-                    <div class="col-md-7 border-bottom mb-4"></div>
-
-                    <h4 class="text-primary">
-                        You will need approximately
-                    </h4>
-
-                    <!-- FORMS -->
-                    <div class="row mt-4">
-                        <div class="col-md-3 form-group">
-                            <input type="number" placeholder="Length" class="form-control">
-                        </div>
-                        <div class="col-md-5">
-                            <span>Cubic yards</span>
-                        </div>
-                        <p class="col-12 mb-4 mt-2">
-                            OR approx
-                        </p>
-                        <div class="col-md-3 form-group">
-                            <input type="number" placeholder="Length" class="form-control">
-                        </div>
-                        <div class="col-md-5">
-                            <span>Less Mess ba gs</span>
-                        </div>
-
-                    </div>
-
-                    <div class="col-md-7 border-bottom my-5"></div>
-
-
-                    <div class="row faq--calculate-content-footer background--primary">
-                        <div class="col-md-6 p-5">
-                            <div class="my-auto row">
-                                <img src="assets/img/bg.png"
-                                     height="200"
-                                     alt=""
-                                     class="img-fluid col-md-6 px-0">
-
-                                <div class="col-md-6 my-auto pl-1 text-md-left text-center">
-                                    <h4 class="text-white mb-0">
-                                        Each Less Mess
-                                        bag contains
-                                    </h4>
-                                    <h2 class="text-yellow">
-                                        1 CUBIC YARD OF
-                                        QUALITY
-                                        MATERIAL.
-                                    </h2>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="col-md-6 p-5">
-                            <div class="text-center">
-
-                                <h2 class="text-white mb-0">
-                                    NEED MORE THAN 1 BAG?
-                                </h2>
-                                <p class="text-yellow mb-0">
-                                    Place your order for 2 or more bags at the same time and
-                                </p>
-                                <h1 class="text-yellow mb-0 font-size-larger">
-                                    SAVE $10
-                                </h1>
-                                <h5 class="text-yellow">
-                                    on your additional bags!
-                                </h5>
-                                <small class="text-white mt-3">
-                                    *not to be combined with any other offer.
-                                </small>
-                            </div>
-
-                        </div>
-                    </div>
-
-
-                </div>
-
-                <!-- TECHNICAL DOCUMENTS TAB content -->
-                <div class="tab-pane fade" id="pills-tech" role="tabpanel" aria-labelledby="pills-tech-tab">
-                    <div class="mt-5">
-                        <h2 class="h1 mt-4 text-primary font-weight-light">
-                            Technical Documents
-                        </h2>
-                        <p>
-                            Essential information regarding the products you and your team use is available at the links
-                            below.
-                        </p>
-                    </div>
-
-                    <div class="row my-5 pt-5">
-                        <div class="col-md-4 pr-1 pr-md-5">
-                            <p class="pr-0 pr-lg-5">
-                                <a href="#" class="text-dark">
-                                    Technical Document One
-                                    <i class="fa fa-download text-primary float-right"></i>
-                                </a>
-                            </p>
-                        </div>
-                        <div class="col-md-4 pr-1 pr-md-5">
-                            <p class="pr-0 pr-lg-5">
-                                <a href="#" class="text-dark">
-                                    Technical Document Two
-                                    <i class="fa fa-download text-primary float-right"></i>
-                                </a>
-                            </p>
-                        </div>
-                        <div class="col-md-4 pr-1 pr-md-5">
-                            <p class="pr-0 pr-lg-5">
-                                <a href="#" class="text-dark">
-                                    Technical Document Three
-                                    <i class="fa fa-download text-primary float-right"></i>
-                                </a>
-                            </p>
-                        </div>
-                        <div class="col-md-4 pr-1 pr-md-5">
-                            <p class="pr-0 pr-lg-5">
-                                <a href="#" class="text-dark">
-                                    Technical Document Four
-                                    <i class="fa fa-download text-primary float-right"></i>
-                                </a>
-                            </p>
-                        </div>
-                        <div class="col-md-4 pr-1 pr-md-5">
-                            <p class="pr-0 pr-lg-5">
-                                <a href="#" class="text-dark">
-                                    Technical Document Five
-                                    <i class="fa fa-download text-primary float-right"></i>
-                                </a>
-                            </p>
-                        </div>
-                        <div class="col-md-4 pr-1 pr-md-5">
-                            <p class="pr-0 pr-lg-5">
-                                <a href="#" class="text-dark">
-                                    Technical Document Seven
-                                    <i class="fa fa-download text-primary float-right"></i>
-                                </a>
-                            </p>
-                        </div>
-                        <div class="col-md-4 pr-1 pr-md-5">
-                            <p class="pr-0 pr-lg-5">
-                                <a href="#" class="text-dark">
-                                    Technical Document Eight
-                                    <i class="fa fa-download text-primary float-right"></i>
-                                </a>
-                            </p>
-                        </div>
-                        <div class="col-md-4 pr-1 pr-md-5">
-                            <p class="pr-0 pr-lg-5">
-                                <a href="#" class="text-dark">
-                                    Technical Document Nine
-                                    <i class="fa fa-download text-primary float-right"></i>
-                                </a>
-                            </p>
-                        </div>
-                        <div class="col-md-4 pr-1 pr-md-5">
-                            <p class="pr-0 pr-lg-5">
-                                <a href="#" class="text-dark">
-                                    Technical Document Ten
-                                    <i class="fa fa-download text-primary float-right"></i>
-                                </a>
-                            </p>
-                        </div>
-                        <div class="col-md-4 pr-1 pr-md-5">
-                            <p class="pr-0 pr-lg-5">
-                                <a href="#" class="text-dark">
-                                    Technical Document Eleven
-                                    <i class="fa fa-download text-primary float-right"></i>
-                                </a>
-                            </p>
-                        </div>
-                        <div class="col-md-4 pr-1 pr-md-5">
-                            <p class="pr-0 pr-lg-5">
-                                <a href="#" class="text-dark">
-                                    Technical Document Twelve
-                                    <i class="fa fa-download text-primary float-right"></i>
-                                </a>
-                            </p>
-                        </div>
-                        <div class="col-md-4 pr-1 pr-md-5">
-                            <p class="pr-0 pr-lg-5">
-                                <a href="#" class="text-dark">
-                                    Technical Document Thirteen
-                                    <i class="fa fa-download text-primary float-right"></i>
-                                </a>
-                            </p>
-                        </div>
-                        <div class="col-md-4 pr-1 pr-md-5">
-                            <p class="pr-0 pr-lg-5">
-                                <a href="#" class="text-dark">
-                                    Technical Document Fourteen
-                                    <i class="fa fa-download text-primary float-right"></i>
-                                </a>
-                            </p>
-                        </div>
-                        <div class="col-md-4 pr-1 pr-md-5">
-                            <p class="pr-0 pr-lg-5">
-                                <a href="#" class="text-dark">
-                                    Technical Document Fifteen
-                                    <i class="fa fa-download text-primary float-right"></i>
-                                </a>
-                            </p>
-                        </div>
-
-
-                    </div>
-
-                    <div class="w-100 bg-light py-3">
-                        <p class="mb-0 pl-3">
-                            For additional information, please contact our Sales Team at 416.798.7050
-                        </p>
-                    </div>
-
-                </div>
-
-                <!-- FAQS/SUPPORT  TAB content -->
-                <div class="tab-pane fade" id="pills-faq" role="tabpanel" aria-labelledby="pills-faq-tab">
-                    <div class="my-5">
-                        <h2 class="h1 mt-4 text-primary font-weight-light">
-                            FAQs
-                        </h2>
-                    </div>
-
-                    <!-- Collapse -->
-                    <div class="accordion w-100" id="accordionExample">
-
-                        <!-- collapse item -->
-                        <div class="card mt-4">
-                            <div class="card-header" id="headingOne" data-toggle="collapse"
-                                 data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                <h2 class="mb-0">
-                                    <button class="btn btn-link btn-block text-left" type="button">
-                                        DO I HAVE TO BE HOME TO RE CEIVE THE BAG?
-                                    </button>
-                                </h2>
-                            </div>
-
-                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                                 data-parent="#accordionExample">
-                                <div class="card-body">
-                                    We use a forklift that is 8 feet wide and cannot bring the bag to your backyard due
-                                    to
-                                    damage that the tires may cause to the lawn. We can drop
-                                    the bag at any place the forklift can reach without causing any damage to your
-                                    property.
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /collapse item -->
-
-                        <div class="card mt-4">
-                            <div class="card-header collapsed" id="heading2" data-toggle="collapse"
-                                 data-target="#collapse2"
-                                 aria-expanded="true" aria-controls="collapse2">
-                                <h2 class="mb-0">
-                                    <button class="btn btn-link" type="button">
-                                        HOW DO I FILL MY BAG FO R WASTE PICK-UP?
-                                    </button>
-                                </h2>
-                            </div>
-
-                            <div id="collapse2" class="collapse" aria-labelledby="heading2"
-                                 data-parent="#accordionExample">
-                                <div class="card-body">
-                                    We use a forklift that is 8 feet wide and cannot bring the bag to your backyard due
-                                    to
-                                    damage that the tires may cause to the lawn. We can drop
-                                    the bag at any place the forklift can reach without causing any damage to your
-                                    property.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card mt-4">
-                            <div class="card-header collapsed" id="heading3" data-toggle="collapse"
-                                 data-target="#collapse3"
-                                 aria-expanded="true" aria-controls="collapse3">
-                                <h2 class="mb-0">
-                                    <button class="btn btn-link" type="button">
-                                        HOW MUCH WEIGHT CAN THE BA G HOLD?
-                                    </button>
-                                </h2>
-                            </div>
-                            <div id="collapse3" class="collapse" aria-labelledby="heading3"
-                                 data-parent="#accordionExample">
-                                <div class="card-body">
-                                    We use a forklift that is 8 feet wide and cannot bring the bag to your backyard due
-                                    to
-                                    damage that the tires may cause to the lawn. We can drop
-                                    the bag at any place the forklift can reach without causing any damage to your
-                                    property.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card mt-4">
-                            <div class="card-header collapsed" id="heading4" data-toggle="collapse"
-                                 data-target="#collapse4"
-                                 aria-expanded="true" aria-controls="collapse4">
-                                <h2 class="mb-0">
-                                    <button class="btn btn-link" type="button">
-                                        DO YOU ACCEPT CASH?
-                                    </button>
-                                </h2>
-                            </div>
-                            <div id="collapse4" class="collapse" aria-labelledby="heading4"
-                                 data-parent="#accordionExample">
-                                <div class="card-body">
-                                    We use a forklift that is 8 feet wide and cannot bring the bag to your backyard due
-                                    to
-                                    damage that the tires may cause to the lawn. We can drop
-                                    the bag at any place the forklift can reach without causing any damage to your
-                                    property.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card mt-4">
-                            <div class="card-header collapsed" id="heading5" data-toggle="collapse"
-                                 data-target="#collapse5"
-                                 aria-expanded="true" aria-controls="collapse5">
-                                <h2 class="mb-0">
-                                    <button class="btn btn-link" type="button">
-                                        CAN YOU BRING THE BAG INT O MY BACKYARD?
-                                    </button>
-                                </h2>
-                            </div>
-                            <div id="collapse5" class="collapse" aria-labelledby="heading5"
-                                 data-parent="#accordionExample">
-                                <div class="card-body">
-                                    We use a forklift that is 8 feet wide and cannot bring the bag to your backyard due
-                                    to
-                                    damage that the tires may cause to the lawn. We can drop br
-                                    the bag at any place the forklift can reach without causing any damage to your
-                                    property.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card mt-4">
-                            <div class="card-header collapsed" id="heading6" data-toggle="collapse"
-                                 data-target="#collapse6"
-                                 aria-expanded="true" aria-controls="collapse6">
-                                <h2 class="mb-0">
-                                    <button class="btn btn-link" type="button">
-                                        WHAT DO WE DO WITH THE BAG ONCE WE ARE FINISHED WITH IT?
-                                    </button>
-                                </h2>
-                            </div>
-                            <div id="collapse6" class="collapse" aria-labelledby="heading6"
-                                 data-parent="#accordionExample">
-                                <div class="card-body">
-                                    We use a forklift that is 8 feet wide and cannot bring the bag to your backyard due
-                                    to
-                                    damage that the tires may cause to the lawn. We can drop br
-                                    the bag at any place the forklift can reach without causing any damage to your
-                                    property.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card mt-4">
-                            <div class="card-header collapsed" id="heading7" data-toggle="collapse"
-                                 data-target="#collapse7"
-                                 aria-expanded="true" aria-controls="collapse7">
-                                <h2 class="mb-0">
-                                    <button class="btn btn-link" type="button">
-                                        WHERE CAN I RETURN THE BAG?
-                                    </button>
-                                </h2>
-                            </div>
-                            <div id="collapse7" class="collapse" aria-labelledby="heading7"
-                                 data-parent="#accordionExample">
-                                <div class="card-body">
-                                    We use a forklift that is 8 feet wide and cannot bring the bag to your backyard due
-                                    to
-                                    damage that the tires may cause to the lawn. We can drop br
-                                    the bag at any place the forklift can reach without causing any damage to your
-                                    property.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card mt-4">
-                            <div class="card-header collapsed" id="heading8" data-toggle="collapse"
-                                 data-target="#collapse8"
-                                 aria-expanded="true" aria-controls="collapse8">
-                                <h2 class="mb-0">
-                                    <button class="btn btn-link" type="button">
-                                        WHAT HAPPENS IF I AM NOT H APPY WITH THE PRODUCT?
-                                    </button>
-                                </h2>
-                            </div>
-                            <div id="collapse8" class="collapse" aria-labelledby="heading8"
-                                 data-parent="#accordionExample">
-                                <div class="card-body">
-                                    We use a forklift that is 8 feet wide and cannot bring the bag to your backyard due
-                                    to
-                                    damage that the tires may cause to the lawn. We can drop br
-                                    the bag at any place the forklift can reach without causing any damage to your
-                                    property.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card mt-4">
-                            <div class="card-header collapsed" id="heading9" data-toggle="collapse"
-                                 data-target="#collapse9"
-                                 aria-expanded="true" aria-controls="collapse9">
-                                <h2 class="mb-0">
-                                    <button class="btn btn-link" type="button">
-                                        ARE YOUR PRODUCTS ORGAN IC?
-                                    </button>
-                                </h2>
-                            </div>
-                            <div id="collapse9" class="collapse" aria-labelledby="heading9"
-                                 data-parent="#accordionExample">
-                                <div class="card-body">
-                                    We use a forklift that is 9 feet wide and cannot bring the bag to your backyard due
-                                    to
-                                    damage that the tires may cause to the lawn. We can drop br
-                                    the bag at any place the forklift can reach without causing any damage to your
-                                    property.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card mt-4">
-                            <div class="card-header collapsed" id="heading10" data-toggle="collapse"
-                                 data-target="#collapse10"
-                                 aria-expanded="true" aria-controls="collapse10">
-                                <h2 class="mb-0">
-                                    <button class="btn btn-link" type="button">
-                                        WHY SHOULD I TOP DRESS MY LAWN?
-                                    </button>
-                                </h2>
-                            </div>
-                            <div id="collapse10" class="collapse" aria-labelledby="heading10"
-                                 data-parent="#accordionExample">
-                                <div class="card-body">
-                                    We use a forklift that is 10 feet wide and cannot bring the bag to your backyard due
-                                    to
-                                    damage that the tires may cause to the lawn. We can drop br
-                                    the bag at any place the forklift can reach without causing any damage to your
-                                    property.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card mt-4">
-                            <div class="card-header collapsed" id="heading11" data-toggle="collapse"
-                                 data-target="#collapse11"
-                                 aria-expanded="true" aria-controls="collapse11">
-                                <h2 class="mb-0">
-                                    <button class="btn btn-link" type="button">
-                                        WHAT ARE FIVE EASY STEP S TO A HEALTHY LAWN?
-                                    </button>
-                                </h2>
-                            </div>
-                            <div id="collapse11" class="collapse" aria-labelledby="heading11"
-                                 data-parent="#accordionExample">
-                                <div class="card-body">
-                                    We use a forklift that is 11 feet wide and cannot bring the bag to your backyard due
-                                    to
-                                    damage that the tires may cause to the lawn. We can drop br
-                                    the bag at any place the forklift can reach without causing any damage to your
-                                    property.
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </div>
-                </div>
-
-                <!-- GLOSSARY OF TERMS  TAB content -->
-                <div class="tab-pane fade" id="pills-terms" role="tabpanel" aria-labelledby="pills-terms-tab">
-                    <div class="row faq--terms-tab-content">
-                        <div class="col-12 my-5">
-                            <h2 class="h1 mt-4 text-primary font-weight-light">
-                                Glossary of Terms
-                            </h2>
-                        </div>
-
-                        <div class="col-12 col-md-4">
-                            <h5 class="mb-3 text-primary">TOPSOIL</h5>
-                            <p class="pr-1 pr-md-5">
-                                Topsoil is the uppermost layer of soil. It is the
-                                most nutrient-rich soil variety because of its
-                                high concentration of organic matter and
-                                microorganisms. Topsoil is one of the most
-                                basic ingredients in a healthy and productive
-                                garden.
-                            </p>
-                        </div>
-                        <div class="col-12 col-md-4">
-                            <h5 class="mb-3 text-primary">PEAT LOAM</h5>
-                            <p class="pr-1 pr-md-5">
-                                Peat loam is naturally decomposed organic
-                                matter that is an aggregate of plant, animal
-                                and mineral materials. Its texture varies from
-                                stringy to sandy to mushy. Excellent for
-                                holding nutrients and moisture, and is
-                                commonly used as a garden mulch.
-                            </p>
-                        </div>
-                        <div class="col-12 col-md-4">
-                            <h5 class="mb-3 text-primary">
-                                SILT
-                            </h5>
-                            <p class="pr-1 pr-md-5">
-                                Silt is sedimentary remains of fine clay, sand
-                                or soil found in running water on the water
-                                bed and along the shore. The best silt for
-                                gardening will have been harvested from
-                                water sites where there is a high
-                                concentration of natural vegetation.
-                            </p>
-                        </div>
-
-                        <div class="col-12 my-2 my-md-4 col-md-4">
-                            <h5 class="mb-3 text-primary">
-                                MULCH
-                            </h5>
-                            <p class="pr-1 pr-md-5">
-                                Mulch is used on top of soil to help discourage
-                                weeds, keep the soil moist and prevent
-                                erosion. Tree bark, grass, shredded wood,
-                                grass clippings, straw, leaves, compost and
-                                even shredded newspaper can be used as
-                                mulch.
-                            </p>
-                        </div>
-                        <div class="col-12 my-2 my-md-4 col-md-4">
-                            <h5 class="mb-3 text-primary">
-                                HUMUS
-                            </h5>
-                            <p class="pr-1 pr-md-5">
-                                Humus is fully decomposed organic matter
-                                that has reached the point when it will not
-                                break down any further. Also referred to as
-                                mature compost, it is an excellent source of
-                                nutrients to microbes, which increases healthy
-                                microbial activity in the garden to stimulate
-                                plant life.
-                            </p>
-                        </div>
-                        <div class="col-12 my-2 my-md-4 col-md-4">
-                            <h5 class="mb-3 text-primary">
-                                CLAY
-                            </h5>
-                            <p class="pr-1 pr-md-5">
-                                Clay is a fine-grained earth material that is a
-                                component in many gardening soils including
-                                loam, topsoil and silt
-                            </p>
-                        </div>
-
-                        <div class="col-12 col-md-4">
-                            <h5 class="mb-3 text-primary">
-                                COMPOST
-                            </h5>
-                            <p class="pr-1 pr-md-5">
-                                Compost is recycled organic waste that has
-                                been decomposed into a dark, crumbly
-                                soil-like matter. Using compost returns
-                                nutrient-rich organic matter to the soil in a
-                                usable form and helps promote healthy plant
-                                growth. Compost can also be used as a mulch.
-                            </p>
-                        </div>
-                        <div class="col-12 col-md-4">
-                            <h5 class="mb-3 text-primary">
-                                LOAM
-                            </h5>
-                            <p class="pr-1 pr-md-5">
-                                Loam is a mixture of clay, sand and silt that is
-                                excellent at holding moisture while allowing
-                                adequate drainage for proper air circulation.
-                                The ideal loam mixture is a combination of 50
-                                percent sand with 25 percent clay and 25
-                                percent silt. Can be used as a variety of
-                                topsoil
-                            </p>
-                        </div>
-                        <div class="col-12 col-md-4">
-                            <h5 class="mb-3 text-primary">
-                                FERTILIZER
-                            </h5>
-                            <p class="pr-1 pr-md-5">
-                                For a healthy garden, fertilizers promote plant
-                                growth by adding essential nutrients. The
-                                main nutrients (aka macronutrients) in a
-                                fertilizer are nitrogen, phosphorus and
-                                potassium. Typically labelled with three
-                                numbers, which refers to the concentration of
-                                nutrients in order of nitrogen-
-                                phosphorus-potassium.
-                            </p>
-                        </div>
-                        <div class="col-12 mt-2 mt-md-4  col-md-4">
-                            <h5 class="mb-3 text-primary">
-                                PEAT MOSS
-                            </h5>
-                            <p class="pr-1 pr-md-5">
-                                Peat moss is made with decayed and
-                                compacted Sphagnum moss. Peat moss is
-                                used as a soil conditioner, which increases the
-                                soil’s ability to hold water and nutrients. This
-                                is especially useful when the base soil is
-                                sandy, or for plants that require additional
-                                moisture to flourish.
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <i class="fa fa-chevron-left text-dark"></i>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <i class="fa fa-chevron-right text-dark"></i>
+            </a>
         </div>
     </div>
 </main>
