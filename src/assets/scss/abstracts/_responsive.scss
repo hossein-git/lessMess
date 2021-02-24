@@ -6,6 +6,9 @@
   .card--listing-img {
     max-width: 250px;
   }
+  .offer--product {
+    text-align: center;
+  }
 }
 
 /* Only Tablet */
@@ -60,6 +63,13 @@
   .navbar-nav .dropdown-menu.cart_box {
     left: 0 !important;
   }
+  .offer--title{
+    h2{
+      font-size: 50px;
+    }
+
+  }
+
 }
 
 
