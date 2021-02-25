@@ -22,8 +22,17 @@
 
 /* Mobile Tablet */
 @media only screen and (max-width: 768px) {
+  .about--logo {
+    border-right: none;
+    height: auto;
+    text-align: center;
 
-  .news--border-right{
+    img {
+      height: auto;
+    }
+  }
+
+  .news--border-right {
     border: none;
   }
   .heading--title {
@@ -67,8 +76,8 @@
   .navbar-nav .dropdown-menu.cart_box {
     left: 0 !important;
   }
-  .offer--title{
-    h2{
+  .offer--title {
+    h2 {
       font-size: 50px;
     }
 
@@ -107,10 +116,10 @@
 ---------------------------------------------------*/
 @media only screen and (min-width: 992px) {
 
-    .modal-lg,
-    .modal-xl {
-      max-width: 1100px;
-    }
+  .modal-lg,
+  .modal-xl {
+    max-width: 1100px;
+  }
   .banner_slide_content {
     min-height: 480px;
 

@@ -1,0 +1,32 @@
+.about--us-bg{
+  background-image: url("../../assets/img/shutterstock_-1.png");
+
+  background-size: cover;
+  background-position: center center;
+  height: 703px;
+  margin-top: -28%;
+  z-index: 0;
+}
+
+.about--box-1, .about--box-2{
+  background-size: cover;
+  background-position: center center;
+  height: 500px;
+  .about--box-content{
+    margin-top: 15%;
+  }
+}
+
+.about--box-1{
+  background-image: url("../../assets/img/shutterstock_1037607751@2x.png");
+}
+
+.about--box-2{
+  background-image: url("../../assets/img/20190828_144140_BLUE@2x.png");
+}
+
+
+.about--logo{
+  border-right: 1px dashed $primary;
+  height: 398px;
+}

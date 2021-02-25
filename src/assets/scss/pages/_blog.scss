@@ -1,0 +1,23 @@
+.blog--heading{
+  background-image: url(../img/bl.png);
+  background-position: center center;
+  background-size: cover;
+  height: 430px;
+}
+
+.blog--card{
+  height: 100%;
+  img{
+    margin: auto;
+    width: 376px;
+    height: 376px;
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+
+  &:hover img {
+    opacity: 0.7;
+  }
+}
