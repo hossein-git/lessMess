@@ -8,7 +8,7 @@
     <title>HOME</title>
 </head>
 
-<body>
+<body class="px-0">
 
 
 <!-- START HEADER -->
@@ -73,7 +73,8 @@
                             </li>
 
                             <li>
-                                <a href="#" class="nav-link">
+                                <!-- Button trigger modal -->
+                                <a type="button" class="nav-link" data-toggle="modal" data-target="#exampleModalCenter">
                                     <i class="fa fa-shopping-cart text-white font--20"></i>
                                 </a>
                             </li>
@@ -209,7 +210,7 @@
                             </li>
 
                             <li>
-                                <a href="#" class="nav-link">
+                                <a type="button" class="nav-link" data-toggle="modal" data-target="#exampleModalCenter">
                                     <i class="fa fa-shopping-cart text-dark font--20"></i>
                                 </a>
                             </li>
@@ -348,9 +349,9 @@
     </section>
 
     <!-- Hassle-free -->
-    <section class="mt-5 py-5 background--yellow">
-        <div class="container">
-            <div class="row">
+    <section class="my-5 py-5 background--yellow">
+        <div class="container ">
+            <div class="row pt-5">
                 <!-- title  -->
                 <div class="col-12 mb-5 offer--title">
                     <h2 class="text-center text-uppercase">
@@ -457,7 +458,7 @@
             </div>
         </div>
         <!-- mobile and tablet -->
-        <div class="row mx-2 mx-md-5">
+        <div class="row pt-5 mx-2 mx-md-5">
             <div class="col-md-6 col-12 d-flex mt-5 text-left d-lg-none">
                 <span class="bs-stepper-circle mx-0 float-left">1</span>
                 <img class="float-left mx-2" width="58" height="57" src="../assets/img/Group 583@2x.png" alt="">
@@ -734,6 +735,75 @@
 
 
 </main>
+
+<!-- Shopping Cart Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <!--                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>-->
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body px-2 px-md-5">
+                <a href="details.html">
+                    <img class="img-fluid"
+                         src="../assets/img/_0003_Soil@2x.png"
+                         width="191"
+                         height="196"
+                         alt="">
+                </a>
+                <h3 class="text-primary mt-4 mb-0">
+                    <a href="details.html">
+                        TOP DRESSING BLEND
+                    </a>
+                </h3>
+                <p>
+                    Has been added to your cart
+                </p>
+                <span class="float-left mr-5 mt-3">
+                    Quantity
+                </span>
+
+                <!-- This custom JQuery plugin can have step , min value, max value and default value -->
+                <div class="quantity float-right cart--quantity">
+                    <input data-min-value="1" type="button" value="-"
+                           class="minus">
+                    <input type="number" data-step="1"
+                           min="1" max="1000"
+                           name="quantity"
+                           value="1"
+                           title="Quantity" class="qty" size="4">
+                    <input data-max-value="1000" type="button" value="+" class="plus">
+                </div>
+
+
+            </div>
+            <div class="modal-footer justify-content-around">
+                <span class="col-5">
+                1 item in cart
+                </span>
+                <span class="col-5">
+                Subtotal: $XXXX.XX
+                </span>
+                <div class="d-flex w-100 btn-lg  mt-3 px-0">
+                    <button type="button" class="col btn-lg mr-1 btn btn-outline-primary">
+                        Keep Shopping
+                    </button>
+
+                    <button type="button" class="col btn btn-primary" data-dismiss="modal">
+                        Go to Cart
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
 <!-- before footer -->
 <section class="py-5 background--yellow newsletter--section">
     <div class="container py-5">
@@ -812,7 +882,6 @@
     </div>
 
 </section>
-
 
 <footer class="background--primary">
     <div class="container">
