@@ -22,6 +22,10 @@
 
 /* Mobile Tablet */
 @media only screen and (max-width: 768px) {
+
+  .news--border-right{
+    border: none;
+  }
   .heading--title {
     font-size: 35px;
   }

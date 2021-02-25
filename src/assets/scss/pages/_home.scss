@@ -205,22 +205,29 @@
 }
 
 .step {
-  img{
-    width: 78px;
-    height: 77px;
+  img {
+    max-height: 100px;
     margin-bottom: 1.2rem;
   }
-  p{
-    display: none;
-   margin-top: 1.2rem;
+
+  p {
+    margin-top: 1.2rem;
     text-transform: uppercase;
+    text-align: center;
+    //margin-left: 3%;
+    //float: right;
   }
 }
 
-.featured--section{
+.featured--section {
   background-color: #f7f7f7;
 }
 
-.border--bottom-2{
+.border--bottom-2 {
   border-bottom: 2px solid #000000;
+}
+
+.newsletter--input {
+  width: 238px;
+  height: 45px;
 }
