@@ -90,8 +90,8 @@ module.exports = {
       filename: "assets/css/styles.css"
     }),
     new HtmlWebpackPlugin({
-      title: "Mulch",
-      template: "src/pages/detail-mulch.html",
+      title: "Compost",
+      template: "src/pages/detail-compost.html",
       inject: true,
       minify: {
         removeComments: false,
