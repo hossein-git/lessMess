@@ -1,0 +1,636 @@
+$main-green: #34833a;
+
+.checkout_wrapper {
+  width: 100%;
+}
+
+// START STEP 1 PRODUCTS
+
+.step-progressbar {
+  padding: 0 !important;
+  width: 55em;
+  max-width: 90%;
+  list-style-type: none;
+  margin: 4em auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+
+  > li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    > span {
+      color: $main-green;
+    }
+
+    > span:first-of-type {
+      position: relative;
+      width: 3.5em;
+      height: 3.5em;
+      padding: 0.25em;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 700;
+      font-size: 1.5em;
+      border: 3px solid $main-green;
+      background: #fff;
+      border-radius: 50%;
+      margin-bottom: 0.75em;
+
+      &::before {
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        content: "";
+        background: $main-green;
+        left: -100%;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: -1;
+      }
+
+      &::after {
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        content: "";
+        background: $main-green;
+        left: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: -1;
+      }
+    }
+
+    &.active {
+      > span:first-of-type {
+        background: $main-green;
+        color: #fff;
+      }
+    }
+
+    &:first-child {
+      > span {
+        &::before {
+          content: none;
+        }
+      }
+    }
+
+    &:last-child {
+      > span {
+        &::after {
+          content: none;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    > li {
+      > span:first-of-type {
+        width: 2em;
+        height: 2em;
+      }
+    }
+  }
+}
+
+.filled-btn {
+  width: 100%;
+  height: 75px;
+  color: white;
+  background-color: $main-green;
+  border: none;
+  border-radius: 5px;
+  font-size: 22px;
+}
+
+.checkbox-parent {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  label {
+    margin: 0;
+    margin-left: 25px;
+  }
+  .login-checkbox {
+    width: 30px;
+    height: 30px;
+    border-color: $main-green;
+    border-radius: 5px;
+  }
+}
+
+.products-summery-section {
+  margin: 0 14%;
+  margin-top: 100px;
+  h2 {
+    color: $main-green;
+  }
+}
+
+.product-card {
+  margin-right: 15px;
+  border-top: 1px solid $main-green;
+  border-bottom: 1px solid $main-green;
+  padding: 25px 0;
+  position: relative;
+  .remove {
+    text-decoration: underline;
+    position: absolute;
+    right: 0;
+    top: 25px;
+    cursor: pointer;
+  }
+  img {
+    // width: 25%;
+  }
+  .quantity-parent {
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    h2 {
+      color: $main-green;
+      margin-bottom: 43px;
+    }
+    .counter-parent {
+      margin-bottom: 70px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      .label {
+        margin-right: 15px;
+        color: #666669;
+      }
+      .counter {
+        display: flex;
+        border: 1px solid #dedede;
+        border-radius: 5px;
+        .number {
+          font-size: 20px;
+          border-right: 1px solid #dedede;
+          border-left: 1px solid #dedede;
+          padding: 0.5rem;
+        }
+        .plus {
+          font-size: 20px;
+          padding: 0.5rem 1rem;
+          color: #707070;
+          cursor: pointer;
+        }
+        .negetive {
+          font-size: 20px;
+          padding: 0.5rem 1rem;
+          color: #707070;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .right-side-parent {
+    // width: 15%;
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    .price {
+      font-size: 16px;
+      margin: 0;
+      text-align: right;
+    }
+    .total-price {
+      font-size: 20px;
+      margin: 0;
+      text-align: right;
+    }
+  }
+}
+
+.code-parent {
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 149px;
+  .code-content {
+    margin: 40px 25px;
+  }
+}
+.btn-input-parent {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  input {
+    width: 78%;
+    border: 1px solid #707070;
+  }
+  button {
+    width: 20%;
+    text-align: center;
+    background-color: $main-green;
+    color: white;
+    font-size: 14px;
+    border: none;
+  }
+}
+.prices-parent {
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 366px;
+  .prices-content {
+    margin: 40px 25px;
+    height: 100%;
+    .price-list {
+      height: 75%;
+      .price-row {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    .footer {
+      width: 100%;
+      border-top: 1px solid #707070;
+      padding-top: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
+
+.delivery-btn {
+  width: 100%;
+  height: 75px;
+  background-color: $main-green;
+  color: white;
+  font-size: 22px;
+  border: none;
+  border-radius: 5px;
+}
+
+.transparent-backgrount {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 1200px;
+  background-color: #00000070;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .login-modal {
+    width: 659px;
+    height: 767px;
+    z-index: 11;
+    background-color: white;
+    position: relative;
+    .close-icon {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      color: #707070;
+      font-size: 18px;
+    }
+    .modal-content {
+      margin-top: 10%;
+      padding: 0 10%;
+      z-index: 11;
+      border: none !important;
+      .title {
+        font-size: 35px;
+        color: $main-green;
+        margin-bottom: 30px;
+      }
+      .login-input {
+        border: 1px solid $main-green;
+        border-radius: 5px;
+        height: 75px;
+        padding-left: 15px;
+      }
+
+      .checkbox-parent {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        label {
+          margin: 0;
+          margin-left: 25px;
+        }
+        .login-checkbox {
+          width: 30px;
+          height: 30px;
+          border-color: $main-green;
+          border-radius: 5px;
+        }
+      }
+
+      .actions-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .register {
+          text-decoration: underline;
+          color: $main-green;
+        }
+        .forget-pass {
+          color: $main-green;
+        }
+      }
+      .or-parent {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .line {
+          height: 1px;
+          width: 45%;
+          background-color: black;
+        }
+        .or {
+          width: 10%;
+          text-align: center;
+        }
+      }
+      .continue-btn {
+        width: 100%;
+        height: 75px;
+        color: $main-green;
+        background-color: white;
+        border-radius: 5px;
+        border: 1px solid $main-green;
+        font-size: 24px;
+      }
+    }
+  }
+}
+// END STEP 1 PRODUCTS
+
+// START STEP 2 PRODUCTS
+
+.date-picker {
+  width: 100%;
+  height: 700px;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.range-result {
+  color: $main-green;
+}
+
+.range-input {
+  border: none;
+}
+
+.Cont-payment-parent {
+  width: 300px;
+}
+
+.svg-text {
+  width: 227px;
+  position: absolute;
+  right: 62px;
+  top: 60px;
+  font-size: 20px;
+}
+@media only screen and (max-width: 500px) {
+  .svg-text {
+    right: 0 !important;
+    bottom: 0 !important;
+    top: unset !important;
+  }
+}
+// END STEP 2 PRODUCTS
+
+// START STEP 3 PRODUCTS
+
+.warning {
+  color: #737680;
+}
+
+.main-headings {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  .left-heading {
+    flex-grow: 7;
+  }
+  .right-heading {
+    flex-grow: 1;
+  }
+}
+
+.form-parent {
+  border-top: 1px solid #707070;
+  border-bottom: 1px solid #707070;
+  padding: 25px 0;
+  position: relative;
+  select {
+    /* styling */
+    background-color: white;
+    border: none;
+    border-radius: 4px;
+    display: inline-block;
+    font: inherit;
+    line-height: 1.5em;
+    padding: 0.5em 3.5em 0.5em 1em;
+    background-color: #f7f7f7;
+    height: 45px;
+    width: 100%;
+
+    /* reset */
+
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+
+  /* arrow */
+
+  select.minimal {
+    background-image: linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%),
+    linear-gradient(to right, #ccc, #ccc);
+    background-position: calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
+    background-size: 5px 5px, 5px 5px, 1px 1.5em;
+    background-repeat: no-repeat;
+  }
+
+  select.minimal:focus {
+    background-image: linear-gradient(45deg, green 50%, transparent 50%),
+    linear-gradient(135deg, transparent 50%, green 50%),
+    linear-gradient(to right, #ccc, #ccc);
+    background-position: calc(100% - 15px) 1em, calc(100% - 20px) 1em,
+    calc(100% - 2.5em) 0.5em;
+    background-size: 5px 5px, 5px 5px, 1px 1.5em;
+    background-repeat: no-repeat;
+    border-color: green;
+    outline: 0;
+  }
+
+  select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+  }
+  input {
+    background-color: #f7f7f7;
+    height: 45px;
+    width: 100%;
+    border: none;
+    padding-left: 15px;
+  }
+
+  textarea {
+    background-color: #f7f7f7;
+    width: 100%;
+    padding-left: 15px;
+    padding-top: 15px;
+    border: none;
+  }
+}
+
+.radio-item {
+  display: inline-block;
+  position: relative;
+  padding: 0 6px;
+  margin: 10px 0 0;
+}
+
+.radio-item input[type="radio"] {
+  display: none;
+}
+
+.radio-item label {
+  color: #666;
+  font-weight: normal;
+}
+
+.radio-item label:before {
+  content: " ";
+  display: inline-block;
+  position: relative;
+  top: 5px;
+  margin: 0 5px 0 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 11px;
+  border: 2px solid #707070;
+  background-color: transparent;
+}
+
+.radio-item input[type="radio"]:checked + label:after {
+  border-radius: 11px;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 9px;
+  left: 10px;
+  content: " ";
+  display: block;
+  background: #707070;
+}
+
+.border-bottom {
+  border-bottom: 1px solid black !important;
+  padding-bottom: 15px;
+}
+
+.green-card {
+  width: 100%;
+  height: 141px;
+  background-color: #eff5ef;
+  padding: 20px 15px;
+  margin-top: 40px;
+  margin-bottom: 90px;
+  .title {
+    color: $main-green;
+  }
+}
+
+.prices-parent.detailes {
+  height: 1029px;
+}
+.price-list.detailes {
+  height: 20% !important;
+}
+.change {
+  text-decoration: underline;
+  color: #666669;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.product-detales-card {
+  width: 100%;
+  height: 190px;
+  border-bottom: 1px solid $main-green;
+  padding-top: 15px;
+  .image {
+    width: 87.76px;
+    height: 89.66px;
+  }
+  .product-name {
+    font-size: 20px;
+    color: $main-green;
+  }
+  .count {
+    font-size: 16px;
+  }
+}
+.prices-content.detailes {
+  margin-top: 20px;
+}
+
+.form-parent.detailes {
+  padding-bottom: 5px;
+  border: none;
+}
+
+.bank-form.form-parent {
+  border: none;
+  max-width: 395px;
+  .credit-card-field {
+    position: relative;
+
+    i {
+      position: absolute;
+      right: 10px;
+      top: 15px;
+      color: #707070;
+    }
+  }
+  .side-inputs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    input {
+      max-width: 186px;
+      height: 45px;
+    }
+    .cvv-card-field {
+      width: 186px;
+      height: 45px;
+      position: relative;
+      i {
+        position: absolute;
+        right: 10px;
+        top: 15px;
+        color: #707070;
+      }
+    }
+  }
+}
+// END STEP 3 PRODUCTS
