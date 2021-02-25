@@ -22,6 +22,12 @@
 
 /* Mobile Tablet */
 @media only screen and (max-width: 768px) {
+  .cart_count, .wishlist_count {
+    background-color: $primary;
+    color: #ffffff;
+    top: 0;
+
+  }
   .about--logo {
     border-right: none;
     height: auto;

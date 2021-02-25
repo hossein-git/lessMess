@@ -1,10 +1,18 @@
-html{
+html {
   scroll-behavior: smooth !important;
 }
 
-html , body {
+html, body {
   overflow-x: hidden !important;
   max-width: 100% !important;
+}
+
+input[type="text"], input[type="password"], input[type="number"] {
+  background-color: #f7f7f7;
+}
+
+textarea {
+  background-color: #f7f7f7 !important;
 }
 
 .background--primary {
@@ -17,10 +25,15 @@ html , body {
   border-bottom: 4px solid $primary;
 }
 
-.background--yellow{
+.background--yellow {
   background-color: $background-yellow;
 }
 
-.bg-light-gray{
+.bg-light-gray {
   background-color: #E4E4E4;
 }
+
+.border--bottom-primary {
+  border-bottom: 1px solid $primary;
+}
+
