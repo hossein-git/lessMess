@@ -90,17 +90,8 @@ module.exports = {
       filename: "assets/css/styles.css"
     }),
     new HtmlWebpackPlugin({
-      title: "Setting up webpack 4",
-      template: "src/index.html",
-      inject: true,
-      minify: {
-        removeComments: false,
-        collapseWhitespace: false
-      }
-    }),
-    new HtmlWebpackPlugin({
-      title: "Home Page",
-      template: "src/pages/home.html",
+      title: "Soil",
+      template: "src/pages/detail-soil.html",
       inject: true,
       minify: {
         removeComments: false,

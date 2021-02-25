@@ -57,7 +57,7 @@
     display: none;
   }
   .details-heading--lg-img {
-    display: unset;
+    display: block;
   }
   .carousel-control-next, .carousel-control-prev {
     font-size: 18px;
@@ -106,6 +106,11 @@
   min-width: 992px
 ---------------------------------------------------*/
 @media only screen and (min-width: 992px) {
+
+    .modal-lg,
+    .modal-xl {
+      max-width: 1100px;
+    }
   .banner_slide_content {
     min-height: 480px;
 
