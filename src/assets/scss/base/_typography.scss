@@ -1,9 +1,9 @@
 //@import url('https://fonts.googleapis.com/css?family=Roboto:700');
-@font-face {
-  font-family: 'FranklinGothic';
-  src:
-  url('../../assets/font/FranklinGothic.ttf')  format('truetype')
-}
+//@font-face {
+//  font-family: 'FranklinGothic';
+//  src:
+//  url('../../assets/fonts/FranklinGothic.ttf')  format('truetype')
+//}
 
 
 body {
@@ -22,26 +22,30 @@ h1, h2, h3, h4, h5, h6 {
   line-height: normal;
 }
 
-.heading--title{
+h1 {
+  text-align: center;
+}
+
+.heading--title {
   font-size: 50px;
   line-height: 50px;
   text-transform: uppercase;
 }
 
-.heading--subtitle{
+.heading--subtitle {
   font-size: 22px;
 }
 
-.font--20{
+.font--20 {
   font-size: 20px !important;
 }
 
-.font--18{
+.font--18 {
   font-size: 20px !important;
 }
 
-.offer--title{
-  h2{
+.offer--title {
+  h2 {
     font-size: 70px;
   }
 

@@ -256,8 +256,10 @@
                                             data-animation="slideInLeft" data-animation-delay="1s">
                                             Get up to <span class="text_default">50%</span> off Today Only!
                                         </h5>
+
                                         <a class="btn btn-warning staggered-animation text-uppercase"
-                                           href="shop-left-sidebar.html" data-animation="slideInLeft"
+                                           data-target="#orderNowModal" data-toggle="modal"
+                                           href="#" data-animation="slideInLeft"
                                            data-animation-delay="1.5s">ORDER NOW
                                         </a>
                                     </div>
@@ -339,7 +341,7 @@
                 </div>
 
                 <div class="col-12 text-center mt-5">
-                    <button class="btn btn-primary px-5 py-2" name="" id="">
+                    <button class="btn btn-primary px-5 py-2" name="" >
                         VIEW ALL PRODUCTS
                     </button>
                 </div>
@@ -349,7 +351,7 @@
     </section>
 
     <!-- Hassle-free -->
-    <section class="my-5 py-5 background--yellow">
+    <section class="mt-5 py-5 background--yellow">
         <div class="container ">
             <div class="row pt-5">
                 <!-- title  -->
@@ -363,7 +365,7 @@
                     <div class="bs-stepper-header">
                         <!-- your steps here -->
                         <div class="step">
-                            <img src="assets/img/Group 583@2x.png" alt="">
+                            <img class="ml-n3" src="assets/img/Group 583@2x.png" alt="">
                         </div>
                         <div class="line bg-warning"></div>
                         <div class="step active">
@@ -381,8 +383,8 @@
                                  alt="">
                         </div>
                         <div class="line bg-warning"></div>
-                        <div class="step">
-                            <img src="assets/img/model 3-5@2x.png" alt="">
+                        <div class="step ">
+                            <img class="mr-n3" src="assets/img/model 3-5@2x.png" alt="">
                         </div>
                     </div>
 
@@ -420,13 +422,13 @@
                 <div class="bs-stepper d-none d-lg-block col-12">
                     <div class="row">
                         <!-- your steps here -->
-                        <div class="col text-uppercase mt-2">
-                            <p class="">
+                        <div class="col text-uppercase mt-2 ">
+                            <p class="ml-n4">
                                 ENTER YOUR <br>
                                 postal code
                             </p></div>
                         <div class="col text-uppercase text-center mt-2">
-                            <p class="pr-5">
+                            <p class="pr-5 ml-n5">
                                 CHOOSE YOur <br>
                                 products
                             </p>
@@ -515,7 +517,7 @@
     <!-- why lessMass -->
     <section class="why--us-section">
         <div class="row">
-            <div class="offset-md-2 col bg-white ">
+            <div class="offset-md-2 col bg-white why--us-home-content">
                 <div class="row py-5 px-1 px-md-4 px-lg-5">
                     <div class="col-12 offer--title">
                         <h2 class="text-uppercase py-5">
@@ -600,7 +602,7 @@
                     </div>
 
                     <div class="col-md-3 text-center">
-                        <a href="about.html" class="btn btn-primary btn-lg " name="">
+                        <a href="about.html" class="btn btn-primary btn-lg col-md-11" name="">
                             LEARN MORE
                         </a>
                     </div>
@@ -612,7 +614,7 @@
     </section>
 
     <!-- Featured News -->
-    <section class="mt-5 py-5 featured--section">
+    <section class="pb-5 featured--section">
         <div class="container">
             <div class="row">
                 <!-- title  -->
@@ -679,15 +681,15 @@
     </section>
 
     <!-- Insta feeds -->
-    <section class="mt-5 py-5 inst--feed-section">
+    <section class="mt-5 pt-5 inst--feed-section">
 
         <div class="row px-2">
             <!-- title  -->
             <div class="col-12 mb-5">
-                <h2 class="text-center h1 text-primary">
+                <h2 class="text-center h1 text-primary font-size-larger">
                     FOLLOW US ON INSTAGRAM
                 </h2>
-                <p class="text-center">
+                <p class="text-center font--18">
                     @lessmess.envirobag
                 </p>
             </div>
@@ -808,6 +810,66 @@
     </div>
 </div>
 
+<!-- order now component -->
+<div class="modal fade" id="orderNowModal" tabindex="-1" role="dialog" aria-labelledby="orderNowModalTitle"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row px-2 justify-content-around">
+                    <div class="col-5 border border-primary py-4 px-2 text-primary h4 mr-1">
+                        Welcome To <br>
+                        Less Mess
+                    </div>
+                    <div class="col-5 bg-light-gray py-4 px-2 h4">
+                        Bienvenu au <br>
+                        Less Mess
+                    </div>
+
+                    <div class="col-12 my-5">
+                        <h3 class="text-primary">
+                            ENTER YOUR POSTAL CODE:
+                        </h3>
+                        <p class="font--18">
+                            Your location is needed to display the products <br>
+                            available in your area and calculate prices.
+                        </p>
+                    </div>
+
+                    <button type="button" class="btn col btn-outline-primary font-size-larger">
+                        A1A
+                    </button>
+
+                    <button type="button" class="btn mx-1 col btn-outline-primary font-size-larger">
+                        A1A
+                    </button>
+
+                    <button type="button" class="btn col btn-outline-primary font-size-larger">
+                        GO!
+                    </button>
+
+                    <div class="col-5 border--bottom-primary mt-2"></div>
+                    <div class="centre col-1 font--18 mb-n2 mt-3 px-2 text-muted">OR</div>
+                    <div class="col-5 border--bottom-primary mt-2"></div>
+
+                    <button type="button" class="btn col btn-outline-primary mt-4 py-3 font--20">
+                        <i class="fa fa-location-arrow"></i> Use my current location
+                    </button>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
 
 <!-- before footer -->
 <section class="py-5 background--yellow newsletter--section">
@@ -905,27 +967,27 @@
                 <br>
                 <ul class="text-white list-unstyled">
                     <li>
-                        <a href="#" class="text-white">
+                        <a href="detail-soil.html" class="text-white">
                             Topsoil
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="text-white">
+                        <a href="detail-mulch.html" class="text-white">
                             Mulch
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="text-white">
+                        <a href="detail-compost.html" class="text-white">
                             Compost
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="text-white">
+                        <a href="detail-sand.html" class="text-white">
                             Sand
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="text-white">
+                        <a href="detail-stone.html" class="text-white">
                             Stone
                         </a>
                     </li>
@@ -935,29 +997,29 @@
             </div>
 
             <div class="col-12 col-md mt-3 text-left">
-                <a class="text-left text-white">
+                <a href="resource.html" class="text-left text-white">
                     RESOURCES
                 </a>
                 <br>
                 <br>
                 <ul class="text-white list-unstyled">
                     <li>
-                        <a href="#" class="text-white" data-toggle="modal" data-target="#soilCalculatorModalCenter">
+                        <a href="resource.html#pills-calculator-tab" class="text-white" data-toggle="modal" data-target="#soilCalculatorModalCenter">
                             Soil Calculator
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="text-white">
+                        <a href="resource.html#pills-tech-tab" class="text-white">
                             Technical documents
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="text-white">
+                        <a href="resource.html#pills-faq-tab" class="text-white">
                             FAQs/Support
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="text-white">
+                        <a href="resource.html#pills-terms-tab" class="text-white">
                             Glossary of terms
                         </a>
                     </li>
@@ -968,7 +1030,7 @@
 
             <div class="col-12 col-md mt-3 text-left">
 
-                <a href="blog.html" class="h5 text-left text-white">
+                <a href="blog-news.html" class="h5 text-left text-white">
                     NEWS & BLOG
                 </a>
                 <br>
@@ -985,17 +1047,17 @@
                 </a>
                 <ul class="text-white list-unstyled">
                     <li>
-                        <a href="carrer.html" class="text-left text-white">
+                        <a href="carrier.html" class="text-left text-white">
                             Careers
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="text-left text-white">
+                        <a href="corporate.html" class="text-left text-white">
                             Corporate & Bulk Orders
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="text-left text-white">
+                        <a href="carrier.html" class="text-left text-white">
                             Become a Dealer
                         </a>
                     </li>

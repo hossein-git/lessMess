@@ -2,12 +2,12 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Contact</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title><%= htmlWebpackPlugin.options.title %></title>
 
-<link href="assets/css/styles.css" rel="stylesheet"></head>
+</head>
 
 <body class="px-0">
 <!-- START HEADER -->
@@ -46,7 +46,8 @@
                         <!-- User and cart  -->
                         <ul class="navbar-nav attr-nav align-items-center">
                             <li class="dropdown cart_dropdown">
-                                <a class="nav-link cart_trigger" href="#" data-toggle="dropdown">
+                                <a class="nav-link cart_trigger" href="#"
+                                   data-toggle="dropdown">
                                     <i class="fa fa-user-circle text-white font--20"></i>
                                 </a>
                                 <div class="cart_box dropdown-menu dropdown-menu-bottom">
@@ -72,7 +73,8 @@
 
                             <li>
                                 <!-- Button trigger modal -->
-                                <a type="button" class="nav-link" data-toggle="modal" data-target="#shoppingCartModalCenter">
+                                <a type="button" class="nav-link" data-toggle="modal"
+                                   data-target="#shoppingCartModalCenter">
                                     <i class="fa fa-shopping-cart text-white font--20"></i>
                                 </a>
                             </li>
@@ -87,12 +89,13 @@
             <div class="nav_block">
                 <!-- LOGO -->
                 <a class="navbar-brand" href="/">
-                    <img class="img-fluid header--logo" src="assets/img/less_mess_logo@2x.png" alt="logo">
+                    <img class="img-fluid header--logo" src="assets/img/less_mess_logo@2x.png" alt="logo"/>
                 </a>
 
                 <!-- Main NAV -->
                 <nav class="navbar navbar-expand-lg">
-                    <button class="navbar-toggler side_navbar_toggler" type="button" data-toggle="collapse" data-target="#navbarSidetoggle" aria-expanded="false">
+                    <button class="navbar-toggler side_navbar_toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSidetoggle" aria-expanded="false">
                         <span class="fa fa-bars"></span>
                     </button>
                     <!-- search tablet -->
@@ -109,7 +112,7 @@
                     <div class="collapse navbar-collapse mobile_side_menu" id="navbarSidetoggle">
                         <ul class="navbar-nav header--nav-ul">
                             <li class="dropdown">
-                                <a data-toggle="dropdown" class="nav-link dropdown-toggle" href="#">Products</a>
+                                <a data-toggle="dropdown" class="nav-link dropdown-toggle " href="#">Products</a>
                                 <div class="dropdown-menu">
                                     <ul>
                                         <li><a class="dropdown-item nav-link nav_item" href="#">SubCat 1</a></li>
@@ -181,7 +184,8 @@
                     <div class="col-4">
                         <ul class="navbar-nav attr-nav align-items-center">
                             <li class="dropdown cart_dropdown">
-                                <a class="nav-link cart_trigger" href="#" data-toggle="dropdown">
+                                <a class="nav-link cart_trigger" href="#"
+                                   data-toggle="dropdown">
                                     <i class="fa fa-user-circle text-dark font--20"></i>
                                 </a>
                                 <div class="cart_box dropdown-menu dropdown-menu-bottom">
@@ -206,7 +210,8 @@
                             </li>
 
                             <li>
-                                <a type="button" class="nav-link" data-toggle="modal" data-target="#shoppingCartModalCenter">
+                                <a type="button" class="nav-link" data-toggle="modal"
+                                   data-target="#shoppingCartModalCenter">
                                     <i class="fa fa-shopping-cart text-dark font--20"></i>
                                 </a>
                             </li>
@@ -232,135 +237,100 @@
 </header>
 <!-- END HEADER -->
 
-<div class="contact--heading"></div>
+<section>
+    <div class="row background--primary px-5 h-100">
+        <div class="col-md-6">
+            <img src="assets/img/detailsHeader.png" class="img-fluid d-lg-none details-heading--lg-img py-5 mx-auto"
+                 alt="">
+
+            <img class="img-fluid d-none d-lg-block details-heading--img col-9" src="assets/img/details-header.png"
+                 alt="less mess">
+        </div>
+        <div class="col-md-6 py-5">
+            <h6 class="text-white font--20">CORPORATE & BULK ORDERS</h6>
+            <h1 class="text-yellow text-left heading--title">
+                LOREM IPSUM DOLOR <br>
+                SIT AMET
+            </h1>
+            <h6 class="text-white heading--subtitle pt-2">
+                In teger iaculis blandit porttitor. <br>
+                Vestibulum quam ex, finibus vel <br>
+                augue vitae, auctor bibendum sem.
+            </h6>
+
+        </div>
+    </div>
+</section>
 
 
-<main>
-    <!-- Product details Section -->
-    <section class="container pb-5">
-        <div class="row">
-            <!-- breadcrumb -->
-            <div class="col-12 float-left my-5 font-weight-lighter">
-                Home / Contact
-            </div>
-
-            <div class="col-md-6">
-                <h1 class="text-left text-primary">
-                    WE WANT TO <br>
-                    HEAR FROM YOU!
-                </h1>
-
-                <div class="border-top py-4">
-                    <h5 class="text-primary">
-                        Address
-                    </h5>
-                    <span class="float-left">
-                        401 Bowes Road <br>
-                        Concord, ON L4K 1J4
-                    </span>
-
-                    <a href="#" class="float-right">
-                        Get Directions <br>
-                        Print Map
-                    </a>
-
-
+<main class="pb-5">
+    <section class="mb-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <!-- breadcrumb -->
+                <div class="col-12 float-left my-5 font-weight-lighter">
+                    Home / Corporate & Bulk Orders
                 </div>
-
-                <div class="border-top mt-5 py-3">
-                    <p class="text-primary">
-                        For soil delivery and delivery of other <br>
-                        gardening blends contact our sales team:
+                <div class="col-12 mt-5 pt-5">
+                    <h1 class="text-primary text-left text-uppercase font-size-larger">
+                        COrporate & Bulk Oders
+                    </h1>
+                    <p class="mt-4 font--20">
+                        Fill out the form below and our sales team will contact you to discuss your <br>
+                        needs. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer iaculis<br>
+                        blandit porttitor. Vestibulum quam ex, finibus vel augue vitae,<br>
+                        auctor bibendum sem.
                     </p>
-                    <span class="float-left">
-                       Phone
-                    </span>
-                    <span class="float-right text-primary">
-                       416.789.4749
-                    </span>
-                    <br>
-                    <span class="float-left">
-                       Email
-                    </span>
-                    <span class="float-right text-primary">
-                       orderdesk@lessmess.ca
-                    </span>
                 </div>
+                <div class="col-md-7">
+                    <form class="row">
+                        <div class="col-md-6 form-group mt-3">
+                            <input type="text" class="form-control" placeholder="First Name">
+                        </div>
+                        <div class="col-md-6 form-group mt-3">
+                            <input type="text" class="form-control" placeholder="Last Name">
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <input type="text" class="form-control" placeholder="Email Address">
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <input type="text" class="form-control" placeholder="Phone">
+                        </div>
 
-                <div class="border-top mt-5 py-5">
-                    <h4 class="text-primary text-left">
-                        Bulk/Corporate Orders
-                    </h4>
-                    Call our office at 416.789.4749
+                        <div class="col-12 form-group">
+                            <textarea class="form-control text-left" rows="10">Message</textarea>
+                        </div>
 
-                </div>
+                        <div class="col-12 my-5">
+                            <p>
+                                By submitting this form, yo
+                                u are consenting to receive marketing emails from: G&L Group, 401
+                                Bowes Road, Concord, ON, Ontario, L4K 1J4, CA, http://gandlgroup.com. You can revoke your
+                                consent to receive emails at any time by using the SafeUnsubscribe® link, found at the bottom of
+                                every email. Emails are serviced by Constant Contact.
+                            </p>
+                        </div>
 
-            </div>
+                        <div class="col-12 form-group">
+                            <button class="btn btn-primary btn-lg col-md-6" name="" >
+                                SUBMIT
+                            </button>
+                        </div>
 
 
-            <div class="col-md-6">
-                <div class="row justify-content-around">
-                    <input type="text" class="col-5 form-control " placeholder="First Name*">
-                    <input type="text" class="col-5 form-control " placeholder="Last Name*">
-
-                    <input type="text" class="col-5 my-2 form-control " placeholder="E-mail Address*">
-                    <input type="text" class="col-5 my-2 form-control " placeholder="Company">
-
-                    <textarea name="" cols="30" rows="10" class="col-11 form-control ">Message</textarea>
-                    <input type="text" disabled="disabled" class="col-5 mt-2 form-control " placeholder="Enter Captcha">
-                    <button class="btn btn-primary col-5 mt-2" type="submit" name="">
-                        SUBMIT
-                    </button>
-
+                    </form>
                 </div>
             </div>
-
         </div>
     </section>
 
-    <section class="row no-gutters mt-5">
-        <div class="col-md-4">
-            <a href="#" class="contact--img">
-                <img class="img-fluid" width="637" src="assets/img/Image 4@2x.png" alt="">
-            <span class="text-white">
-                    CAREER AT <br>
-                    LESS MESS
-            </span>
-            </a>
-
-        </div>
-
-        <div class="col-md-4">
-            <a href="#" class="contact--img">
-                <img class="img-fluid" width="637" src="assets/img/Image 5@2x.png" alt="">
-                <span class="text-white">
-                    CORPORATE & <br>
-                    BULK ORDERS
-            </span>
-            </a>
-
-
-        </div>
-
-        <div class="col-md-4">
-            <a href="#" class="contact--img">
-                <img class="img-fluid" width="637" src="assets/img/truck.png" alt="">
-                <span class="text-white">
-                    BECOME <br>
-                    A DEALER
-            </span>
-
-            </a>
-
-
-        </div>
-
-    </section>
 
 </main>
 
 <!-- Shopping Cart Modal -->
-<div class="modal fade" id="shoppingCartModalCenter" tabindex="-1" role="dialog" aria-labelledby="shoppingCartModalCenterTitle" aria-hidden="true">
+<div class="modal fade" id="shoppingCartModalCenter" tabindex="-1" role="dialog"
+     aria-labelledby="shoppingCartModalCenterTitle"
+     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -371,7 +341,11 @@
             </div>
             <div class="modal-body px-2 px-md-5">
                 <a href="details.html">
-                    <img class="img-fluid" src="assets/img/_0003_Soil@2x.png" width="191" height="196" alt="">
+                    <img class="img-fluid"
+                         src="assets/img/_0003_Soil@2x.png"
+                         width="191"
+                         height="196"
+                         alt="">
                 </a>
                 <h3 class="text-primary mt-4 mb-0">
                     <a href="details.html">
@@ -387,8 +361,13 @@
 
                 <!-- This custom JQuery plugin can have step , min value, max value and default value -->
                 <div class="quantity float-right cart--quantity">
-                    <input data-min-value="1" type="button" value="-" class="minus">
-                    <input type="number" data-step="1" min="1" max="1000" name="quantity" value="1" title="Quantity" class="qty" size="4">
+                    <input data-min-value="1" type="button" value="-"
+                           class="minus">
+                    <input type="number" data-step="1"
+                           min="1" max="1000"
+                           name="quantity"
+                           value="1"
+                           title="Quantity" class="qty" size="4">
                     <input data-max-value="1000" type="button" value="+" class="plus">
                 </div>
 
@@ -401,7 +380,7 @@
                 <span class="col-5">
                 Subtotal: $XXXX.XX
                 </span>
-                <div class="d-flex w-100 btn-lg mt-3 px-0">
+                <div class="d-flex w-100 btn-lg  mt-3 px-0">
                     <button type="button" class="col btn-lg mr-1 btn btn-outline-primary">
                         Keep Shopping
                     </button>
@@ -417,7 +396,8 @@
 </div>
 
 <!-- Soil Calculator Modal -->
-<div class="modal fade bd-example-modal-lg" id="soilCalculatorModalCenter" tabindex="-1" role="dialog" aria-labelledby="soilCalculatorModalCenter" aria-hidden="true">
+<div class="modal fade bd-example-modal-lg" id="soilCalculatorModalCenter" tabindex="-1" role="dialog"
+     aria-labelledby="soilCalculatorModalCenter" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
@@ -425,7 +405,7 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <div class="modal-body px-2 px-md-5 row">
+            <div class="modal-body px-2 px-md-5 row ">
                 <div class="col-12">
                     <h2 class="modal-title text-primary">Soil Calculator</h2>
                     <p>
@@ -445,15 +425,18 @@
                 <div class="col-md-6 mb-3 mt-2 form-group">
 
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="customRadioInline10" name="customRadioInline2" class="custom-control-input">
+                        <input type="radio" id="customRadioInline10" name="customRadioInline2"
+                               class="custom-control-input">
                         <label class="custom-control-label" for="customRadioInline10">Feet</label>
                     </div>
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="customRadioInline20" name="customRadioInline2" class="custom-control-input">
+                        <input type="radio" id="customRadioInline20" name="customRadioInline2"
+                               class="custom-control-input">
                         <label class="custom-control-label" for="customRadioInline20">Inches</label>
                     </div>
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="customRadioInline30" name="customRadioInline2" class="custom-control-input">
+                        <input type="radio" id="customRadioInline30" name="customRadioInline2"
+                               class="custom-control-input">
                         <label class="custom-control-label" for="customRadioInline30">Meters</label>
                     </div>
 
@@ -475,15 +458,18 @@
                     <p class="mt-4"></p>
 
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                        <input type="radio" id="customRadioInline1" name="customRadioInline1"
+                               class="custom-control-input">
                         <label class="custom-control-label" for="customRadioInline1">Feet</label>
                     </div>
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                        <input type="radio" id="customRadioInline2" name="customRadioInline1"
+                               class="custom-control-input">
                         <label class="custom-control-label" for="customRadioInline2">Inches</label>
                     </div>
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="customRadioInline3" name="customRadioInline1" class="custom-control-input">
+                        <input type="radio" id="customRadioInline3" name="customRadioInline1"
+                               class="custom-control-input">
                         <label class="custom-control-label" for="customRadioInline3">Meters</label>
                     </div>
 
@@ -519,7 +505,11 @@
                     <div class="row">
                         <div class="col-md-6 py-5 px-md-3">
                             <div class="pt-4 row">
-                                <img src="assets/img/_0003_Soil@2x.png" height="208" width="203" alt="" class="img-fluid">
+                                <img src="assets/img/_0003_Soil@2x.png"
+                                     height="208"
+                                     width="203"
+                                     alt=""
+                                     class="img-fluid">
 
                                 <div class="col-md-6 my-auto pl-1 text-md-left text-center">
                                     <h5 class="text-white mb-0">
@@ -579,7 +569,10 @@
                     today
                 </h2>
                 <div class="input-group mt-4">
-                    <input type="text" class="form-control newsletter--input border-primary background--yellow" placeholder="Email Address">
+                    <input type="text"
+                           class="form-control newsletter--input border-primary background--yellow"
+                           placeholder="Email Address"
+                    >
                     <div class="input-group-append">
                         <button class="input-group-text bg-primary px-3 text-yellow">
                             <i class="fa fa-chevron-right font--20"></i>
@@ -593,11 +586,13 @@
             </div>
 
             <div class="col-md-3 news--border-right mt-2 text-center">
-                <img class="img-fluid mb-4" src="assets/img/Group 619@2x.png" width="79" height="71" alt="">
+                <img class="img-fluid mb-4" src="assets/img/Group 619@2x.png"
+                     width="79" height="71"
+                     alt="">
                 <h3 class="text-primary text-center">
                     Payment Option
                 </h3>
-                <p class="text-center mt-3">
+                <p class="text-center mt-3 font--20">
                     We accept Visa, <br>
                     Mastercard and Amex
                 </p>
@@ -605,8 +600,10 @@
             </div>
 
             <div class="col-md-3 news--border-right mt-2 text-center">
-                <img class="img-fluid mb-3" src="assets/img/Group 883@2x.png" width="63" height="62" alt="">
-                <p class="text-center">
+                <img class="img-fluid mb-3" src="assets/img/Group 883@2x.png"
+                     width="63" height="62"
+                     alt="">
+                <p class="text-center font--20">
                     Become a
                 </p>
                 <h3 class="text-primary text-center text-uppercase">
@@ -618,15 +615,17 @@
             </div>
 
             <div class="col-md-3 mt-2 text-center">
-                <img class="img-fluid mb-3" src="assets/img/Group 890@2x.png" width="63" height="62" alt="">
-                <p class="text-center">
+                <img class="img-fluid mb-3" src="assets/img/Group 890@2x.png"
+                     width="64" height="57"
+                     alt="">
+                <p class="text-center font--20 pt-2">
                     CONSTRUCTORS
                 </p>
                 <h3 class="text-primary text-center">
                     Need 10 bags <br>
                     or more ?
                 </h3>
-                <p class="text-center mt-2">
+                <p class="text-center mt-2 font--20">
                     CONTACT US TODAY!
                 </p>
 
@@ -642,7 +641,9 @@
     <div class="container">
         <div class="row">
             <div class="col-12 col-md mt-3">
-                <img src="assets/img/footer-logo.png" class="img-fluid" alt="logo">
+                <img src="assets/img/footer-logo.png"
+                     class="img-fluid"
+                     alt="logo">
             </div>
 
             <div class="col-12 col-md mt-3 text-left">
@@ -653,27 +654,27 @@
                 <br>
                 <ul class="text-white list-unstyled">
                     <li>
-                        <a href="#" class="text-white">
+                        <a href="detail-soil.html" class="text-white">
                             Topsoil
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="text-white">
+                        <a href="detail-mulch.html" class="text-white">
                             Mulch
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="text-white">
+                        <a href="detail-compost.html" class="text-white">
                             Compost
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="text-white">
+                        <a href="detail-sand.html" class="text-white">
                             Sand
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="text-white">
+                        <a href="detail-stone.html" class="text-white">
                             Stone
                         </a>
                     </li>
@@ -683,29 +684,29 @@
             </div>
 
             <div class="col-12 col-md mt-3 text-left">
-                <a class="text-left text-white">
+                <a href="resource.html" class="text-left text-white">
                     RESOURCES
                 </a>
                 <br>
                 <br>
                 <ul class="text-white list-unstyled">
                     <li>
-                        <a href="#" class="text-white" data-toggle="modal" data-target="#soilCalculatorModalCenter">
+                        <a href="resource.html#pills-calculator-tab" class="text-white" data-toggle="modal" data-target="#soilCalculatorModalCenter">
                             Soil Calculator
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="text-white">
+                        <a href="resource.html#pills-tech-tab" class="text-white">
                             Technical documents
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="text-white">
+                        <a href="resource.html#pills-faq-tab" class="text-white">
                             FAQs/Support
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="text-white">
+                        <a href="resource.html#pills-terms-tab" class="text-white">
                             Glossary of terms
                         </a>
                     </li>
@@ -716,7 +717,7 @@
 
             <div class="col-12 col-md mt-3 text-left">
 
-                <a href="blog.html" class="h5 text-left text-white">
+                <a href="blog-news.html" class="h5 text-left text-white">
                     NEWS & BLOG
                 </a>
                 <br>
@@ -733,17 +734,17 @@
                 </a>
                 <ul class="text-white list-unstyled">
                     <li>
-                        <a href="carrer.html" class="text-left text-white">
+                        <a href="carrier.html" class="text-left text-white">
                             Careers
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="text-left text-white">
+                        <a href="corporate.html" class="text-left text-white">
                             Corporate & Bulk Orders
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="text-left text-white">
+                        <a href="carrier.html" class="text-left text-white">
                             Become a Dealer
                         </a>
                     </li>
@@ -783,6 +784,6 @@
 </footer>
 
 
-<script type="text/javascript" src="assets/js/bundle.js"></script></body>
+</body>
 
 </html>

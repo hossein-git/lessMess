@@ -1,50 +1,32 @@
 /* Abstract */
 @import "abstracts/colors";
-@import "abstracts/mixins";
 @import "abstracts/variables";
 @import "overrides";
 
 /*Vendor */
 @import "vendor/_bootstrap";
 
-
 /* Base */
 @import "base/base";
-@import "base/reset";
 @import "base/typography";
 
 /* Components */
-@import "components/buttons";
-@import "components/dropdown";
-@import "components/carousel";
-@import "components/sorting";
-@import "components/filters";
 @import "components/slider";
-
 
 /* Layouts */
 @import "layout/header";
-@import "layout/navigation";
-@import "layout/topbar";
+@import "layout/footer.scss";
 
 /* Pages */
 @import "pages/_home";
 @import "pages/product-details";
-@import "pages/account";
 @import "pages/_listing";
-@import "pages/_cart";
 @import "pages/_checkout";
 @import "pages/_faq";
 @import "pages/_blog";
 @import "pages/_about";
 @import "pages/_contact";
 @import "pages/_dealer";
-
-@import "modules/layout.scss";
-@import "modules/footer.scss";
-@import "modules/product-box";
-@import "modules/contact";
-@import "modules/components";
 
 @import "abstracts/responsive";
 

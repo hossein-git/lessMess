@@ -3,7 +3,7 @@
 
 let header = document.getElementById("stickyNav");
 
-if (header == !undefined) {
+if (header !== undefined) {
     let sticky = header.offsetTop;
     window.onscroll = function () {
         myFunction()
