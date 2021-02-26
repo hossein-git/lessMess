@@ -9,6 +9,7 @@ html, body {
 
 input[type="text"], input[type="password"], input[type="number"] {
   background-color: #f7f7f7;
+  height: 45px;
 }
 
 textarea {
@@ -35,5 +36,13 @@ textarea {
 
 .border--bottom-primary {
   border-bottom: 1px solid $primary;
+}
+
+.mb-6 {
+  margin-bottom: 4.5rem !important;
+}
+
+.mt-6 {
+  margin-top: 4.5rem !important;
 }
 

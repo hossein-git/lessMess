@@ -1,0 +1,49 @@
+.dealer--need-section {
+  background-image: url("../../assets/img/shutterstock_1037607751@2x.png");
+  background-size: cover;
+  background-position: center center;
+}
+
+.dealer--need-section, .dealer--provide-section, .dealer--testaments-section {
+  min-height: 920px;
+  padding-top: 8%;
+  padding-bottom: 8%;
+}
+
+.dealer--now-section, .dealer--provide-section {
+  background-color: $dealer-yellow;
+}
+
+.dealer--testaments-section {
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -50px;
+    width: 0;
+    height: 0;
+    border-top: solid 50px $primary;
+    border-left: solid 50px transparent;
+    border-right: solid 50px transparent;
+  }
+}
+
+.dealer--counter {
+  border: 1px solid $yellow;
+  border-radius: 50%;
+  padding: 1.5rem 2rem;
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.dealer--now-section,.dealer--faq-section{
+  padding-top: 8%;
+}
+.dealer--faq-divider{
+  max-width: 170px;
+  border-bottom: 1px solid $primary;
+  margin: 3rem auto;
+}
